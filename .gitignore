@@ -1,0 +1,18 @@
+# === .NET / Blazor ===
+**/bin/
+**/obj/
+*.db
+*.pdb
+
+# === Java / Spring Boot ===
+**/target/
+*.log
+
+# === Visual Studio ===
+.vs/
+*.user
+*.suo
+
+# === OS-specific files ===
+.DS_Store
+Thumbs.db
