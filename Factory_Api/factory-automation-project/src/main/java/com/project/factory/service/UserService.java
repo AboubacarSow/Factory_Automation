@@ -33,7 +33,11 @@ public class UserService
         {
             return null;
         }
-        user.setRole("USER");
+        if(user.getRole().equals("admin"))
+            user.setRole("ADMIN");
+        else {
+            user.setRole("USER");
+        }
         user.setPassword(encoder.encode(user.getPassword()));
         userRepository.save(user);
         return "User registered successfully";

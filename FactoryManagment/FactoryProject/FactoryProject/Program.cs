@@ -1,5 +1,7 @@
 using FactoryProject.Client.Pages;
 using FactoryProject.Components;
+using FactoryProject.Infrastructure.Extensions;
+using FactoryProject.Infrastructure.Utilities;
 
 namespace FactoryProject
 {
@@ -14,6 +16,9 @@ namespace FactoryProject
                 .AddInteractiveServerComponents()
                 .AddInteractiveWebAssemblyComponents();
 
+            builder.Services.RegisterServices();  
+            builder.Services.ConfigureApiSettings(builder.Configuration);
+            builder.Services.ConfigureAuthentication();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
