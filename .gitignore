@@ -16,3 +16,39 @@
 # === OS-specific files ===
 .DS_Store
 Thumbs.db
+
+# === JetBrains Rider ===
+*.idea/
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+# === Maven Wrapper ===
+.mvn/wrapper/maven-wrapper.jar
+# === Gradle Wrapper ===
+.gradle/
+gradle-wrapper.jar
+gradle-wrapper.properties
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+# === IntelliJ IDEA ===
+.idea
+*.iws
+*.iml
+*.ipr
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
