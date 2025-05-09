@@ -10,12 +10,12 @@ public class AccountManager : IAccountService
     private readonly HttpClient _httpClient;
     public AccountManager(IHttpClientFactory httpClientFactory)
     {
-        _httpClient = httpClientFactory.CreateClient("FactoryProjectAPI");
+        _httpClient = httpClientFactory.CreateClient("FactoryApi");
     }
 
-    public async Task<bool> RegisterAysnc(RegisterDto registerDto)
+    public async Task<bool> RegisterAysnc(RegisterModel registerModel)
     {
-        var content = CreateHttpContent(registerDto);
+        var content = CreateHttpContent(registerModel);
         var response = await _httpClient.PostAsync("register", content);
         if (!response.IsSuccessStatusCode)
             return false;
@@ -27,4 +27,5 @@ public class AccountManager : IAccountService
         var json = JsonConvert.SerializeObject(data);
         return new StringContent(json, Encoding.UTF8, "application/json");
     }
+
 }

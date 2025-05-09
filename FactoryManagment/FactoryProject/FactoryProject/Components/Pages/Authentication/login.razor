@@ -1,27 +1,50 @@
 @page "/login"
 @layout AuthLayout
-@rendermode InteractiveServer
+@inject IUnitOfWork _unitofwork
+@inject NavigationManager _navigationManager
+@rendermode InteractiveServer 
+
 <PageTitle>Login</PageTitle>
 
-<div class="d-flex flex-column w-75 justify-content-center mt-5 m-auto border border-1 p-5 shadow shadow-sm">
-    
-    <div class="mb-3"><h3 class="text-center">Login</h3></div><br />
-
-    <EditForm Model="loginModel" OnValidSubmit="LoginUserAsync" class="form-group" Enhance>
+<div class="form-container">
+    <div class="mb-3 title">
+        <h4 class="text-center">
+            <i class="fas fa-sign-in-alt me-2"></i>
+            Login
+        </h4>
+    </div>
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            @errorMessage
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center" role="alert">
+            Please enter your email and password.
+        </div>
+    }
+    <EditForm Model="loginModel" OnValidSubmit="LoginUser" Enhance>
         <DataAnnotationsValidator />
         <div class="d-grid col-auto">
-            <label class="form-label">Email</label>
-            <InputText type="email" @bind-Value="loginModel.Email" class="@GetInputClass(nameof(loginModel.Email))" placeholder="email@example.com" />
-            <ValidationMessage For="@(()=>loginModel.Email)" />
-            <br />
-            <label class="form-label">Password</label>
-            <InputText type="password" @bind-Value="loginModel.Password" class="@GetInputClass(nameof(loginModel.Email))" placeholder="Password" />
-            <ValidationMessage For="@(()=>loginModel.Password)" />
-            <br />
+            <div class="my-3">
+                <label class="form-label">Email</label>
+                <InputText type="email" @bind-Value="loginModel.email" class="@GetInputClass(nameof(loginModel.email))"
+                placeholder="email@example.com" />
+                <ValidationMessage For="@(() => loginModel.email)" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <InputText type="password" @bind-Value="loginModel.password"
+                class="@GetInputClass(nameof(loginModel.password))" placeholder="Password" />
+                <ValidationMessage For="@(() => loginModel.password)" />
+            </div>
             <div class="d-grid justify-content-center">
                 <div>Don't have an account yet? <a href="/register">Register</a></div>
                 <button type="submit" class="btn btn-primary m-4">
-                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    <i class="fa fa-sign-in-alt"></i>
                     <span class="ms-2">Login</span>
                 </button>
             </div>
@@ -29,16 +52,18 @@
     </EditForm>
 </div>
 
-
 @code {
-    [SupplyParameterFromForm(FormName ="LoginForm")]
-    private LoginModel loginModel=new();
-    [CascadingParameter]private EditContext? editContext;
+
+    [Inject]
+    private IJSRuntime jS{ get; set; }
+    private string? errorMessage = String.Empty;
+    [SupplyParameterFromForm(FormName = "LoginForm")]
+    private LoginModel loginModel { get; set; } = new();
+    [CascadingParameter] private EditContext? editContext { get; set; }
     private string GetInputClass(string fieldName)
     {
         if (editContext == null)
             return "form-control form-input";
-
         var fieldIdentifier = new FieldIdentifier(loginModel, fieldName);
         var fieldState = editContext.GetValidationMessages(fieldIdentifier);
 
@@ -47,5 +72,26 @@
         else
             return "form-control form-input";
     }
+    private async Task LoginUser()
+    {
+        try
+        {
+            var tokenContainer = await _unitofwork.AuthService.LoginAsync(loginModel)!;
 
+            if (!String.IsNullOrEmpty(tokenContainer.Token))
+            {
+                await _unitofwork.AuthService.SetAuthenticateAsync(tokenContainer);
+                _navigationManager.NavigateTo("/weather", forceLoad:true);
+            }
+            else
+            {
+                errorMessage = "Invalid email or password.";
+                StateHasChanged();
+            }
+
+        }catch(Exception ex)
+        {
+            await jS.InvokeVoidAsync("console.log", $"{ex}");
+        }
+    }
 }

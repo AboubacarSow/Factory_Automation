@@ -4,6 +4,6 @@ namespace FactoryProject.Contracts;
 
 public interface IAccountService
 {
-    public Task<bool> RegisterAysnc(RegisterDto registerDto);
+    public Task<bool> RegisterAysnc(RegisterModel registerModel);
 
 }

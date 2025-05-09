@@ -14,29 +14,28 @@ public class AuthenticationManager(IHttpClientFactory httpClientFactory,
                                    IHttpContextAccessor httpContextAccessor,
                                    TokenContainer tokenContainer) : IAuthService
 {
-    private readonly HttpClient _httpClient = httpClientFactory.CreateClient("FactoryProjectAPI");
+    private readonly HttpClient _httpClient = httpClientFactory.CreateClient("FactoryApi");
     private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
     private readonly TokenContainer _tokenContainer = tokenContainer;
 
 
 
-    public async Task<bool> LoginAsync(LoginModel loginModel)
+    public async Task<TokenContainer>? LoginAsync(LoginModel loginModel)
     {
         var content = CreateHttpContent(loginModel);
         var response = await _httpClient.PostAsync("login", content);
         if (!response.IsSuccessStatusCode)
-            return false;
+            return null;
         var token = await response.Content.ReadAsStringAsync();
         var tokenContainer = JsonConvert.DeserializeObject<TokenContainer>(token);
         if (String.IsNullOrEmpty(tokenContainer?.Token))
-            return false;
+            return null;
         _tokenContainer.Token = tokenContainer.Token;
-        await AuthenticateAsync(_tokenContainer);
-        return true;
+        return _tokenContainer;
 
     }
 
-    private async Task AuthenticateAsync(TokenContainer tokenContainer)
+    public  async Task SetAuthenticateAsync(TokenContainer tokenContainer)
     {
         var claims = JwtParser.ParseClaimsFromJwt(tokenContainer.Token);
         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

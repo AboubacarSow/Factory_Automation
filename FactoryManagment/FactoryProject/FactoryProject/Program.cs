@@ -1,7 +1,6 @@
-using FactoryProject.Client.Pages;
 using FactoryProject.Components;
+using FactoryProject.DependencyInjection;
 using FactoryProject.Infrastructure.Extensions;
-using FactoryProject.Infrastructure.Utilities;
 
 namespace FactoryProject
 {
@@ -16,9 +15,15 @@ namespace FactoryProject
                 .AddInteractiveServerComponents()
                 .AddInteractiveWebAssemblyComponents();
 
+            builder.Services.AddServerSideBlazor()
+                            .AddCircuitOptions(options => 
+                            { options.DetailedErrors = true; });
+
+
             builder.Services.RegisterServices();  
-            builder.Services.ConfigureApiSettings(builder.Configuration);
             builder.Services.ConfigureAuthentication();
+            builder.Services.ConfigureApiSettings(builder.Configuration);
+            builder.Services.AddRazorPages();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -37,7 +42,12 @@ namespace FactoryProject
 
             app.UseStaticFiles();
             app.UseAntiforgery();
+            
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.MapRazorPages();
             app.MapRazorComponents<App>()
                 .AddInteractiveServerRenderMode()
                 .AddInteractiveWebAssemblyRenderMode()

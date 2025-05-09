@@ -3,30 +3,23 @@ using FactoryProject.Services;
 using FactoryProject.Infrastructure.Utilities;
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FactoryProject.Infrastructure.Extensions;
 
 
 public static class ServicesExtensions
 {
-    public static void RegisterServices(this IServiceCollection services)
-    {
-        services.AddScoped<IProductService, ProductManager>();
-        services.AddScoped<IAccountService, AccountManager>();
-        services.AddScoped<ICategoryService, CategoryManager>();
-        services.AddScoped<IAuthService, AuthenticationManager>();
-    }
     public static void ConfigureApiSettings(this IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<ApiSettings>(configuration.GetSection("ApiSettings"));
-        services.AddHttpClient("FactoryApi", (serviceProvider, client) =>
+        services.AddHttpClient("FactoryApi", client =>
         {
-            var tokenContainer = serviceProvider.GetRequiredService<TokenContainer>();
             var apiSettings = configuration.GetSection("ApiSettings").Get<ApiSettings>();
             client.BaseAddress = new Uri(apiSettings?.BaseUrl ?? string.Empty);
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tokenContainer.Token ?? string.Empty);
-        });
+        })
+        .AddHttpMessageHandler<TokenHandler>();
     }
     public static void ConfigureAuthentication(this IServiceCollection services)
     {
@@ -42,5 +35,6 @@ public static class ServicesExtensions
         services.AddAuthorization();
         services.AddHttpContextAccessor();
         services.AddScoped<TokenContainer>();
+        services.AddScoped<TokenHandler>(); 
     }
 }
