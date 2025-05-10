@@ -23,18 +23,30 @@ public static class ServicesExtensions
     }
     public static void ConfigureAuthentication(this IServiceCollection services)
     {
+        services.Configure<CookiePolicyOptions>(options =>
+        {
+            options.CheckConsentNeeded = context => true;
+            options.MinimumSameSitePolicy=SameSiteMode.None;
+        });
         services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             .AddCookie(options =>
             {
-                options.LoginPath = "/login";
-                options.LogoutPath = "/logout";
-                options.AccessDeniedPath = "/accessDenied";
+                options.LoginPath = "/account/login";
+                options.LogoutPath = "/account/logout";
+                options.AccessDeniedPath = "/account/accessDenied";
                 options.SlidingExpiration = true;
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
             });
         services.AddAuthorization();
+
         services.AddHttpContextAccessor();
+        services.AddScoped<HttpContextAccessor>();
+
+        services.AddHttpClient();
+        services.AddScoped<HttpClient>();
+
         services.AddScoped<TokenContainer>();
         services.AddScoped<TokenHandler>(); 
     }
+    
 }

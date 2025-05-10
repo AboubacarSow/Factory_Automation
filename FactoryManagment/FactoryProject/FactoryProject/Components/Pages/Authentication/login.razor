@@ -1,7 +1,9 @@
-@page "/login"
+@page "/account/login"
+
 @layout AuthLayout
 @inject IUnitOfWork _unitofwork
 @inject NavigationManager _navigationManager
+
 @rendermode InteractiveServer 
 
 <PageTitle>Login</PageTitle>
@@ -76,12 +78,12 @@
     {
         try
         {
-            var tokenContainer = await _unitofwork.AuthService.LoginAsync(loginModel)!;
+            var token = await _unitofwork.AuthService.LoginAsync(loginModel)!;
 
-            if (!String.IsNullOrEmpty(tokenContainer.Token))
+            if (!String.IsNullOrEmpty(token))
             {
-                await _unitofwork.AuthService.SetAuthenticateAsync(tokenContainer);
-                _navigationManager.NavigateTo("/weather", forceLoad:true);
+                //_sessionHandler.Set("tempToken", token);
+                _navigationManager.NavigateTo($"/loginControl?token={token}", forceLoad:true);
             }
             else
             {

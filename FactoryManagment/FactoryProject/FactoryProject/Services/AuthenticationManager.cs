@@ -20,7 +20,7 @@ public class AuthenticationManager(IHttpClientFactory httpClientFactory,
 
 
 
-    public async Task<TokenContainer>? LoginAsync(LoginModel loginModel)
+    public async Task<String>? LoginAsync(LoginModel loginModel)
     {
         var content = CreateHttpContent(loginModel);
         var response = await _httpClient.PostAsync("login", content);
@@ -31,13 +31,13 @@ public class AuthenticationManager(IHttpClientFactory httpClientFactory,
         if (String.IsNullOrEmpty(tokenContainer?.Token))
             return null;
         _tokenContainer.Token = tokenContainer.Token;
-        return _tokenContainer;
+        return _tokenContainer.Token;
 
     }
 
-    public  async Task SetAuthenticateAsync(TokenContainer tokenContainer)
+    public  async Task SetAuthenticateAsync(String token)
     {
-        var claims = JwtParser.ParseClaimsFromJwt(tokenContainer.Token);
+        var claims = JwtParser.ParseClaimsFromJwt(token);
         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
         var expiration = JwtParser.GetExpirationDateFromClaims(claims!);
         var principal = new ClaimsPrincipal(identity);

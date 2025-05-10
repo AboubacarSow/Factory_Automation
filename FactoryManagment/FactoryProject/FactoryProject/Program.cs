@@ -1,6 +1,7 @@
 using FactoryProject.Components;
 using FactoryProject.DependencyInjection;
 using FactoryProject.Infrastructure.Extensions;
+using FactoryProject.Infrastructure.Utilities;
 
 namespace FactoryProject
 {
@@ -15,15 +16,15 @@ namespace FactoryProject
                 .AddInteractiveServerComponents()
                 .AddInteractiveWebAssemblyComponents();
 
+            builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor()
                             .AddCircuitOptions(options => 
                             { options.DetailedErrors = true; });
 
-
+            builder.Services.AddDistributedMemoryCache();
             builder.Services.RegisterServices();  
             builder.Services.ConfigureAuthentication();
             builder.Services.ConfigureApiSettings(builder.Configuration);
-            builder.Services.AddRazorPages();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -37,12 +38,11 @@ namespace FactoryProject
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
             app.UseAntiforgery();
-            
+            app.UseCookiePolicy();
 
             app.UseAuthentication();
             app.UseAuthorization();

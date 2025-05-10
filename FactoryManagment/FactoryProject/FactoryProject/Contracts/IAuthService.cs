@@ -1,13 +1,12 @@
-using FactoryProject.Infrastructure.Utilities;
 using FactoryProject.Models.UserDtos;
 
 namespace FactoryProject.Contracts
 {
     public interface IAuthService
     {
-        Task<TokenContainer>? LoginAsync(LoginModel loginModel);
+        Task<String>? LoginAsync(LoginModel loginModel);
 
-        Task SetAuthenticateAsync(TokenContainer token);
+        Task SetAuthenticateAsync(String token);
         Task LogoutAsync();
         
     }

@@ -12,5 +12,6 @@ public static class DIContaier
         services.AddScoped<ICategoryService, CategoryManager>();
         services.AddScoped<IAuthService, AuthenticationManager>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        
     }
 }
