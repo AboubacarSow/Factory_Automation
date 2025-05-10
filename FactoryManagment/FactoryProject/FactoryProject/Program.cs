@@ -41,11 +41,13 @@ namespace FactoryProject
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
-            app.UseAntiforgery();
+            app.UseRouting();
             app.UseCookiePolicy();
 
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseAntiforgery();
+            
 
             app.MapRazorPages();
             app.MapRazorComponents<App>()

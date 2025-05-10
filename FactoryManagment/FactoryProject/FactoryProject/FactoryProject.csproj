@@ -7,19 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Components\Layout\AdminLayout.razor" />
     <Content Remove="Components\Layout\EmptyLayout.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Components\Layout\AdminLayout.razor" />
-    <Compile Include="Components\Layout\EmptyLayout.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <ProjectReference Include="..\FactoryProject.Client\FactoryProject.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\Pages\Admin\Category\" />
+    <Folder Include="Components\Pages\Admin\Carts\" />
+    <Folder Include="Components\Pages\Admin\Products\" />
   </ItemGroup>
 
 </Project>
