@@ -2,14 +2,11 @@
 
 namespace FactoryProject.Infrastructure.Utilities;
 
-public class TokenHandler :DelegatingHandler
+public class TokenHandler(TokenContainer tokenContainer) : DelegatingHandler
 {
-    private readonly TokenContainer _tokenContainer;
-    public TokenHandler(TokenContainer tokenContainer)
-    {
-        _tokenContainer = tokenContainer;
-    }
-    protected async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
+    private readonly TokenContainer _tokenContainer = tokenContainer;
+
+    protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
         CancellationToken cancellationToken)
     {
         if (!String.IsNullOrEmpty(_tokenContainer.Token))
