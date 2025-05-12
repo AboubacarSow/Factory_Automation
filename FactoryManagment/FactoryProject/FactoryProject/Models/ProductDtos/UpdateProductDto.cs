@@ -4,11 +4,11 @@ namespace FactoryProject.Models.ProductDtos;
 
  public class UpdateProductDto
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public string ImageUrl { get; set; }
-    public string Description { get; set; }
-    public int Stock { get; set; }
-    public double Price { get; set; }
-    public ResultCategoryDto Category { get; set; }
+    public int id { get; set; }
+    public string name { get; set; } = String.Empty;
+    public string description { get; set; } = String.Empty;
+    public decimal price { get; set; }
+    public string imageUrl { get; set; } = String.Empty;
+    public int stock { get; set; }
+    public ResultCategoryDto? category { get; set; }
 }

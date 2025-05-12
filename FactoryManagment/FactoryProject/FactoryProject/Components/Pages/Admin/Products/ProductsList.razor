@@ -1,5 +1,6 @@
 @page "/admin/products"
 @layout AdminLayout
+@attribute [Authorize(Roles ="ADMIN")]
 @inject GenericStateService<ResultProductDto> _bookStateService
 @inject JSRuntime _js
 @inject IUnitOfWork _unitOfWork
@@ -47,15 +48,19 @@ else
                 </button>
             </div>
             <div class="input-group mb-3 ms-2">
-                <select class="form-select" id="inputGroupSelect02">
-                    <option selected>Hepsi</option>
-                    <option value="1">Aktif</option>
-                    <option value="2">Pasif</option>
-                </select>
-                <button class="btn btn-outline-primary" type="button" id="button-addon2">
-                    <i class="fa-solid fa-filter"></i>
-                    Filter
-                </button>
+                <EditForm Model="getProductCategoryById" OnValidSubmit="GetProductsByCategoryId" Enhance FormName="FilteringForm">
+                    <InputSelect class="form-select" id="inputGroupSelect02" @bind-Value="getProductCategoryById.CategoryId">
+                        <option selected>All</option>
+                        @foreach(var category in _categories)
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </InputSelect>
+                    <button class="btn btn-outline-primary" type="submit" id="button-addon2">
+                        <i class="fa-solid fa-filter"></i>
+                        Filter
+                    </button>
+                </EditForm>
             </div>
 
         </div>
@@ -105,13 +110,20 @@ else
                 </tbody>
             </table>
         </div>
+        <div class="container">
+            <div class="btn-group">
+                <input type="button" class="btn btn-primary" value="1"/>
+            </div>
+        </div>
     </div>
 }
-
 
 @code {
     private string errorMessage { get; set; } = String.Empty;
     private List<ResultProductDto> _products = [];
+    private List<ResultCategoryDto> _categories=[];
+    [SupplyParameterFromForm(FormName ="FilteringForm")]
+    private GetProductCategoryDto? getProductCategoryById {get;set;}=new();
     private int count { get; set; }
 
     protected async override Task OnInitializedAsync()
@@ -136,7 +148,13 @@ else
     }
     private async Task GetAllProducts()
     {
-        _products=await _unitOfWork.ProductService.GetAllProductsAsync();
+        _products=await _unitOfWork
+                        .ProductService
+                        .GetAllProductsWithPaginationAsync(new RequestParameters
+                        {
+                            PageSize=7,
+                            PageNumber=1
+                        });
         _bookStateService.SetBooks(_products);
     }
 
@@ -157,6 +175,12 @@ else
                 errorMessage=string.Empty;
             });
         }
+    }
+    private async Task GetProductsByCategoryId()
+    {
+        var products= await _unitOfWork
+                        .ProductService
+                        .GetProductByCateogryIdAsync(getProductCategoryById.CategoryId);
     }
 
 }

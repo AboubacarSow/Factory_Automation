@@ -4,10 +4,11 @@ using FactoryProject.Models.ProductDtos;
 namespace FactoryProject.Contracts;
 public interface IProductService
 {
-    public Task CreateProductAsync(CreateProductDto createProductDto);
-    public Task UpdateProductAsync(UpdateProductDto updateProductDto);
-    public Task DeleteProductAsync(int id);
-    public Task<List<ResultProductDto>> GetAllProductsAsync( RequestParameters requestParameter);
-    public Task<ResultProductDto> GetProductByCateogryIdAsync(int id);
+    public Task<bool> CreateProductAsync(CreateProductDto createProductDto);
+    public Task<bool> UpdateProductAsync(UpdateProductDto updateProductDto);
+    public Task<bool> DeleteProductAsync(int id);
+    public Task<List<ResultProductDto>> GetAllProductsAsync();
+    public Task<PagedList<ResultProductDto>> GetAllProductsWithPaginationAsync(RequestParameters requestParameter);
+    public Task<List<ResultProductDto>> GetProductByCateogryIdAsync(int id);
     public Task<ResultProductDto> GetProductByIdAsync(int id);
 }

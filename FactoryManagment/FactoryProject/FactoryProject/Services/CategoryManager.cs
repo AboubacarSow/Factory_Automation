@@ -1,10 +1,17 @@
 using FactoryProject.Contracts;
 using FactoryProject.Models.CategoryDtos;
 
+using Newtonsoft.Json;
+
 namespace FactoryProject.Services;
 
 public class CategoryManager : ICategoryService
 {
+    private readonly HttpClient _client;
+    public CategoryManager(IHttpClientFactory clientFactory)
+    {
+        _client = clientFactory.CreateClient("FactoryApi");
+    }
     public Task CreateCategoryAsync(CreateCategoryDto createCategoryDto)
     {
         throw new NotImplementedException();
@@ -15,14 +22,20 @@ public class CategoryManager : ICategoryService
         throw new NotImplementedException();
     }
 
-    public Task<List<ResultCategoryDto>> GetAllCategoriesAsync()
+    public async Task<List<ResultCategoryDto>> GetAllCategoriesAsync()
     {
-        throw new NotImplementedException();
+        var response = await _client.GetAsync("category");
+        if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            throw new Exception("An error occured while fetching data from api");
+        var jsonData = await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData)!;
     }
 
-    public Task<ResultCategoryDto> GetCategoryByIdAsync(int id)
+    public async Task<ResultCategoryDto> GetCategoryByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        var categories = await GetAllCategoriesAsync();
+        return  categories.FirstOrDefault(c => c.Id.Equals(id))!;
+      
     }
 
     public Task UpdateCategoryAsync(UpdateCategoryDto updateCategoryDto)
