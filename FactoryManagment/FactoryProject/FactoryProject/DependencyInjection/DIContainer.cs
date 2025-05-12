@@ -11,6 +11,9 @@ public static class DIContaier
         services.AddScoped<IAccountService, AccountManager>();
         services.AddScoped<ICategoryService, CategoryManager>();
         services.AddScoped<IAuthService, AuthenticationManager>();
+        services.AddScoped<ICartService, CartManager>();
+        services.AddScoped<IPersonalService, PersonalManager>();
+        services.AddScoped<IOrderService, OrderManager>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped(typeof(GenericStateService<>));
     }
