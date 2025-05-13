@@ -19,4 +19,34 @@ public class CategoryService
     {
         return categoryRepository.findAll();
     }
+
+    public Category addCategory(Category category)
+    {
+        if(categoryRepository.existsByName(category.getName()))
+        {
+            return null;
+        }
+
+        category.setId(null);
+        return categoryRepository.save(category);
+    }
+
+    public int deleteCategory(int id)
+    {
+        if (categoryRepository.existsById(id))
+        {
+            categoryRepository.deleteById(id);
+            return id;
+        }
+        return 0;
+    }
+
+    public Category updateCategory(Category category)
+    {
+        if (categoryRepository.existsById(category.getId()))
+        {
+            return categoryRepository.save(category);
+        }
+        return null;
+    }
 }

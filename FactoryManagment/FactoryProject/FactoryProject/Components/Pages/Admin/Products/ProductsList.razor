@@ -150,11 +150,7 @@ else
     {
         _products=await _unitOfWork
                         .ProductService
-                        .GetAllProductsWithPaginationAsync(new RequestParameters
-                        {
-                            PageSize=7,
-                            PageNumber=1
-                        });
+                        .GetAllProductsAsync();
         _bookStateService.SetBooks(_products);
     }
 

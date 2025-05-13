@@ -34,8 +34,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -46,8 +50,7 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-10T20:22:08.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T20:22:08.605Z"
             },
             {
               "$type": "Document",
@@ -59,8 +62,7 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Infrastructure\\Extensions\\ExceptionsMiddleWare.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T20:20:11.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T20:20:11.061Z"
             },
             {
               "$type": "Document",
@@ -72,8 +74,7 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-10T20:19:36.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T20:19:36.024Z"
             },
             {
               "$type": "Document",
@@ -85,8 +86,7 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\NotFoundPage.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-10T19:48:31.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T19:48:31.508Z"
             },
             {
               "$type": "Document",
@@ -96,14 +96,10 @@
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Program.cs",
               "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Program.cs",
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T19:43:46.091Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Accessdenied.razor",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-10T12:33:29.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T12:33:29.297Z"
             }
           ]
         },

@@ -59,4 +59,18 @@ public class PersonalController
         return ResponseEntity.ok("Personal deleted successfully");
     }
 
+    @PostMapping("/update")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public ResponseEntity<?> updatePersonal(@RequestBody Personal personal)
+    {
+        Personal updatedPersonal = personalService.updatePersonal(personal);
+
+        if (updatedPersonal == null)
+        {
+            return ResponseEntity.badRequest().build();
+        }
+
+        return ResponseEntity.ok("Personal updated successfully");
+    }
+
 }

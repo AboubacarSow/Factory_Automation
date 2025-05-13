@@ -45,4 +45,13 @@ public class PersonalService
         }
         return 0;
     }
+
+    public Personal updatePersonal(Personal personal)
+    {
+        if (personalRepository.existsById(personal.getId()))
+        {
+            return personalRepository.save(personal);
+        }
+        return null;
+    }
 }
