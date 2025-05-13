@@ -12,6 +12,8 @@ public static class ServicesExtensions
 {
     public static void ConfigureApiSettings(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddSingleton<TokenContainer>();
+        services.AddScoped<TokenHandler>();
         services.Configure<ApiSettings>(configuration.GetSection("ApiSettings"));
         services.AddHttpClient("FactoryApi", client =>
         {
@@ -46,8 +48,7 @@ public static class ServicesExtensions
         services.AddHttpClient();
         services.AddScoped<HttpClient>();
 
-        services.AddScoped<TokenContainer>();
-        services.AddScoped<TokenHandler>(); 
+      
     }
     
 }

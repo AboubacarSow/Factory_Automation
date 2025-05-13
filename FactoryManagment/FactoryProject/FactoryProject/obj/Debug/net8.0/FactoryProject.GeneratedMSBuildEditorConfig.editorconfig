@@ -60,16 +60,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xVcGRhdGVQcm9kdWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Cakes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcQ2FrZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Chocolates.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcQ2hvY29sYXRlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Gums.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcR3Vtcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Waffers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcV2FmZmVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Routes.razor]
@@ -119,6 +135,18 @@ build_metadata.AdditionalFiles.CssScope = b-o2illu5bnr
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Authentication/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoZW50aWNhdGlvblxSZWdpc3Rlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ue1abu37ab
+
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Biscuits.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcQmlzY3VpdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mquya145yf
+
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Cart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcQ2FydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-t6hlux7ome
+
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Order.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcT3JkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cj75r6i4mj
 
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Pages/LoginControl.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5Db250cm9sLmNzaHRtbA==

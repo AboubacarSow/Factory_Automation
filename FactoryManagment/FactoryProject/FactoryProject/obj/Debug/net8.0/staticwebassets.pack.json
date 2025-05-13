@@ -2,11 +2,15 @@
   "Files": [
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FactoryProject.o5h9zgnd44.bundle.scp.css"
+      "PackagePath": "staticwebassets\\FactoryProject.qhw9hf26h8.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\beyazpulcikolata.png",
+      "PackagePath": "staticwebassets\\beyazpulcikolata.png"
     },
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\bootstrap\\bootstrap.min.css",
@@ -15,6 +19,10 @@
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\defaultlayout.css",
+      "PackagePath": "staticwebassets\\css\\defaultlayout.css"
     },
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\login.css",
@@ -27,6 +35,26 @@
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\icons\\find.png",
+      "PackagePath": "staticwebassets\\icons\\find.png"
+    },
+    {
+      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\icons\\logout.png",
+      "PackagePath": "staticwebassets\\icons\\logout.png"
+    },
+    {
+      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\icons\\order.png",
+      "PackagePath": "staticwebassets\\icons\\order.png"
+    },
+    {
+      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\icons\\shopping-cart.png",
+      "PackagePath": "staticwebassets\\icons\\shopping-cart.png"
+    },
+    {
+      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\icons\\user.png",
+      "PackagePath": "staticwebassets\\icons\\user.png"
     },
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\src\\accessdmedia.jpg",

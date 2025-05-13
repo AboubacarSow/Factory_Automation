@@ -2,6 +2,7 @@ using System.Text;
 using FactoryProject.Contracts;
 using FactoryProject.Infrastructure.Utilities;
 using FactoryProject.Models.ProductDtos;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace FactoryProject.Services;
@@ -36,7 +37,7 @@ public class ProductManager : IProductService
     }
     public async Task<List<ResultProductDto>> GetAllProductsAsync()
     {
-        var response = await _client.GetAsync("produt/all");
+        var response = await _client.GetAsync("product/all");
         if (!response.IsSuccessStatusCode)
             throw new Exception("An error occured while fetching data from api");
         if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
@@ -46,7 +47,8 @@ public class ProductManager : IProductService
     }
     public async Task<List<ResultProductDto>> GetProductByCateogryIdAsync(int id)
     {
-        var response = await _client.GetAsync($"product/{id}");
+        var request = new HttpRequestMessage(HttpMethod.Get, $"product?categoryId={id}");
+        var response = await _client.SendAsync(request);
         var jsonData = await response.Content.ReadAsStringAsync();
         var products = JsonConvert.DeserializeObject<List<ResultProductDto>>(jsonData);
         return products!;

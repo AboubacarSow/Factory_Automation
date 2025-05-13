@@ -12,7 +12,8 @@ namespace FactoryProject.Services;
 
 public class AuthenticationManager(IHttpClientFactory httpClientFactory,
                                    IHttpContextAccessor httpContextAccessor,
-                                   TokenContainer tokenContainer) : IAuthService
+                                   TokenContainer tokenContainer
+                                   ) : IAuthService
 {
     private readonly HttpClient _httpClient = httpClientFactory.CreateClient("FactoryApi");
     private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;

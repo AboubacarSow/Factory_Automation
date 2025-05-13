@@ -1,16 +1,24 @@
-﻿using System.Net.Http.Headers;
+﻿using Blazored.LocalStorage;
+using System.Net.Http.Headers;
 
 namespace FactoryProject.Infrastructure.Utilities;
 
-public class TokenHandler(TokenContainer tokenContainer) : DelegatingHandler
+public class TokenHandler: DelegatingHandler
 {
-    private readonly TokenContainer _tokenContainer = tokenContainer;
-
+    //private readonly ILocalStorageService _localStorage = localStorage;
+    private readonly TokenContainer _tokentContainer;    
+    public TokenHandler(TokenContainer tokentContainer)
+    {
+        _tokentContainer = tokentContainer;
+    }
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
         CancellationToken cancellationToken)
     {
-        if (!String.IsNullOrEmpty(_tokenContainer.Token))
-            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _tokenContainer.Token);
-       return await base.SendAsync(request, cancellationToken);
+        var token=_tokentContainer.Token;   
+        if (!string.IsNullOrEmpty(token))
+        {
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer",token);
+        }
+        return await base.SendAsync(request, cancellationToken);
     }
 }

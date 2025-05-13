@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QNpONKFd1jc=",
+  "dgSpecHash": "RftIuEvXIRw=",
   "success": true,
   "projectFilePath": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\FactoryProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ABOUBACAR\\.nuget\\packages\\blazored.localstorage\\4.5.0\\blazored.localstorage.4.5.0.nupkg.sha512",
     "C:\\Users\\ABOUBACAR\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.15\\microsoft.aspnetcore.authorization.8.0.15.nupkg.sha512",
     "C:\\Users\\ABOUBACAR\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.15\\microsoft.aspnetcore.components.8.0.15.nupkg.sha512",
     "C:\\Users\\ABOUBACAR\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.15\\microsoft.aspnetcore.components.analyzers.8.0.15.nupkg.sha512",

@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\infrastructure\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\infrastructure\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\infrastructure\\utilities\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\infrastructure\\utilities\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\infrastructure\\utilities\\tokencontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\infrastructure\\utilities\\tokencontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\services\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\services\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\services\\authenticationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\services\\authenticationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\components\\pages\\authentication\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\components\\pages\\authentication\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\contracts\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\contracts\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,11 +66,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenContainer.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\TokenContainer.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\TokenContainer.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\TokenContainer.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\TokenContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T18:16:16.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\TokenHandler.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\TokenHandler.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\TokenHandler.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\TokenHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:45:45.857Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AuthenticationManager.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\AuthenticationManager.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\AuthenticationManager.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\AuthenticationManager.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\AuthenticationManager.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADgvxoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:08:49.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductManager.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\ProductManager.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\ProductManager.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\ProductManager.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\ProductManager.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwDIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:37:05.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicesExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Infrastructure\\Extensions\\ServicesExtensions.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Infrastructure\\Extensions\\ServicesExtensions.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Infrastructure\\Extensions\\ServicesExtensions.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Infrastructure\\Extensions\\ServicesExtensions.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T15:45:30.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Login.razor",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Login.razor",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Login.razor",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Login.razor",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T16:37:47.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\_Imports.razor",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T16:49:36.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Contracts\\IAuthService.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Contracts\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Contracts\\IAuthService.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Contracts\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:10:38.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Program.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Program.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Program.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Program.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T19:43:46.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\appsettings.json",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\appsettings.json",
@@ -51,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "ExceptionsMiddleWare.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Infrastructure\\Extensions\\ExceptionsMiddleWare.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Infrastructure\\Extensions\\ExceptionsMiddleWare.cs",
@@ -64,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Routes.razor",
@@ -77,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "NotFoundPage.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\NotFoundPage.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\NotFoundPage.razor",
@@ -90,30 +243,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Program.cs",
-              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Program.cs",
-              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Program.cs",
-              "RelativeToolTip": "FactoryProject\\FactoryProject\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T19:43:46.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Accessdenied.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Accessdenied.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Accessdenied.razor",
               "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Accessdenied.razor",
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Authentication\\Accessdenied.razor",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwBwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-10T12:33:29.297Z",
               "EditorCaption": ""

@@ -1,7 +1,7 @@
 using FactoryProject.Components;
 using FactoryProject.DependencyInjection;
 using FactoryProject.Infrastructure.Extensions;
-using FactoryProject.Infrastructure.Utilities;
+using Blazored.LocalStorage;
 
 namespace FactoryProject
 {
@@ -11,18 +11,19 @@ namespace FactoryProject
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            builder.Services.AddBlazoredLocalStorage(); 
+
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents()
                 .AddInteractiveWebAssemblyComponents();
 
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor()
-                            .AddCircuitOptions(options => 
+                            .AddCircuitOptions(options =>
                             { options.DetailedErrors = true; });
 
             builder.Services.AddDistributedMemoryCache();
-            builder.Services.RegisterServices();  
+            builder.Services.RegisterServices();
             builder.Services.ConfigureAuthentication();
             builder.Services.ConfigureApiSettings(builder.Configuration);
             var app = builder.Build();
@@ -47,7 +48,6 @@ namespace FactoryProject
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseAntiforgery();
-            
 
             app.MapRazorPages();
             app.MapRazorComponents<App>()
@@ -58,4 +58,5 @@ namespace FactoryProject
             app.Run();
         }
     }
+         
 }

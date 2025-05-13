@@ -1,0 +1,53 @@
+﻿@page "/biscuits"
+@inject HttpClient Http
+@inject IJSRuntime JS
+@inject IUnitOfWork unitOfWork
+@layout MainLayout
+@attribute [Authorize]
+
+<PageTitle>Biscuits</PageTitle>
+
+<h3 class="text-center">Biscuits</h3>
+
+<div class="main-container">
+    @if(_products==null && _products?.Count==0){
+        <p>
+            <em> Loading...</em>
+                
+        </p>
+    }else{
+        @foreach (var product in _products)
+            {
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="@product.ImageUrl" alt="Product Image" />
+                    </div>
+                    <div class="product-name">
+                        <b>@product.Name</b>
+                    </div>
+                    <div class="product-price">
+                        @product.Price TL
+                    </div>
+                    <div class="product-detail">
+                        @product.Description
+                    </div>
+                    <button id="@product.Id" type="submit" class=" btn btn-primary">
+                        Add to cart
+                    </button>
+                </div>
+                
+            }
+
+        }
+   
+</div>
+
+@code {
+    List<ResultProductDto> _products = [];
+    protected override async Task OnInitializedAsync()
+    {
+        _products=await unitOfWork.ProductService.GetProductByCateogryIdAsync(4);
+        //4 is the of biscuit category
+    }
+
+}

@@ -2,6 +2,7 @@
 
 @layout AuthLayout
 @inject IUnitOfWork _unitofwork
+@inject ILocalStorageService  _localstorageService
 @inject NavigationManager _navigationManager
 @rendermode InteractiveServer 
 
@@ -56,33 +57,26 @@
 @code {
 
     [Inject]
-    private IJSRuntime jS{ get; set; }
+    private  IJSRuntime jS{ get; set; }
     private string? errorMessage = String.Empty;
     [SupplyParameterFromForm(FormName = "LoginForm")]
     private LoginModel loginModel { get; set; } = new();
     [CascadingParameter] private EditContext? editContext { get; set; }
-    private string GetInputClass(string fieldName)
-    {
-        if (editContext == null)
-            return "form-control form-input";
-        var fieldIdentifier = new FieldIdentifier(loginModel, fieldName);
-        var fieldState = editContext.GetValidationMessages(fieldIdentifier);
+    private bool _isInitialized { get; set; } = false;
+    private bool _isReadyForStorage{ get; set; }
 
-        if (fieldState.Any())
-            return "form-control form-input is-invalid";
-        else
-            return "form-control form-input";
-    }
+    private string? _tokenStore{ get; set; }
+
+
     private async Task LoginUser()
     {
         try
         {
             var token = await _unitofwork.AuthService.LoginAsync(loginModel)!;
-
             if (!String.IsNullOrEmpty(token))
             {
-                //_sessionHandler.Set("tempToken", token);
-                _navigationManager.NavigateTo($"/loginControl?token={token}", forceLoad:true);
+                // await _localstorageService.SetItemAsStringAsync("authenticationToken", token);
+                _navigationManager.NavigateTo($"/loginControl?token={token}", forceLoad: true);
             }
             else
             {
@@ -94,5 +88,17 @@
         {
             await jS.InvokeVoidAsync("console.log", $"{ex}");
         }
+    }
+    private string GetInputClass(string fieldName)
+    {
+        if (editContext == null)
+            return "form-control form-input";
+        var fieldIdentifier = new FieldIdentifier(loginModel, fieldName);
+        var fieldState = editContext.GetValidationMessages(fieldIdentifier);
+
+        if (fieldState.Any())
+            return "form-control form-input is-invalid";
+        else
+            return "form-control form-input";
     }
 }

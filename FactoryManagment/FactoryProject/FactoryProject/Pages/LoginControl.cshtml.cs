@@ -22,7 +22,7 @@ namespace FactoryProject.Pages
                 if (!string.IsNullOrEmpty(Token))
                 {
 
-                    ReturnUrl = Url.Content("/");
+                    ReturnUrl = Url.Content("/biscuits");
                     //var token = _sessionHandler.Get("tempToken");
                     await _unitOfWork.AuthService.SetAuthenticateAsync(Token);
                     return LocalRedirect(ReturnUrl);
