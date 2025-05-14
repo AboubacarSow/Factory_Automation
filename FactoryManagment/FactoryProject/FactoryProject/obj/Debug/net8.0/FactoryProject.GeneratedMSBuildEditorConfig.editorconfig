@@ -52,14 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxJbmdyZWRpZW50XEluZ3JlZGllbnRMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Admin/Products/CreateProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xDcmVhdGVQcm9kdWN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Admin/Products/UpdateProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xVcGRhdGVQcm9kdWN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Cakes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcQ2FrZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -116,9 +108,17 @@ build_metadata.AdditionalFiles.CssScope = b-tgn1r5xgxa
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-o22f84ov6z
 
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Admin/Products/CreateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xDcmVhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-0oj8pmwt88
+
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Admin/Products/ProductsList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xQcm9kdWN0c0xpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-x82iuzsvdp
+
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Admin/Products/UpdateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxQcm9kdWN0c1xVcGRhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ijj2rrvkys
 
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Authentication/Accessdenied.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoZW50aWNhdGlvblxBY2Nlc3NkZW5pZWQucmF6b3I=

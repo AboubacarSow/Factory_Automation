@@ -14,7 +14,7 @@ public class ProductManager : IProductService
     {
         _client = clientFactory.CreateClient("FactoryApi");
     }
-    public async Task<bool> CreateProductAsync(CreateProductDto createProductDto)
+    public async Task<bool> CreateProductAsync(ProductForInsertionDto createProductDto)
     {
         var jsonData = JsonConvert.SerializeObject(createProductDto);
         var content = new StringContent(jsonData, Encoding.UTF8, "application/json");

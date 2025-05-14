@@ -2,10 +2,11 @@
 @layout AdminLayout
 @attribute [Authorize(Roles ="ADMIN")]
 @inject GenericStateService<ResultProductDto> _bookStateService
-@inject JSRuntime _js
 @inject IUnitOfWork _unitOfWork
 
 <PageTitle> Products </PageTitle>
+
+
 
 @if (_products == null)
 {
@@ -16,9 +17,9 @@ else
     <div class="container mx-3">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="entete">
-                <h4 class="title"><i class="fa-solid fa-list me-2"></i>List of Products</h4>
+                <h4 class="title"><i class="fas fa-list me-2"></i>List of Products</h4>
                 <a href="admin/createproduct" class="btn btn-outline-primary ms-2">
-                    <i class="fa-solid fa-plus"></i>
+                    <i class="fas fa-plus"></i>
                     Add New Product
                 </a>
             </div>
@@ -38,33 +39,34 @@ else
             </div>
         }
 
-        <div class="d-flex margin-auto">
-            <div class="input-group mb-3">
+        <div class="d-flex margin-auto justify-content-between">
+            <div class="input-group mb-3 w-50">
                 <input type="text" class="form-control" placeholder="Search something..." aria-label="Search something..."
-                    aria-describedby="button-addon2">
+                aria-describedby="button-addon2">
                 <button class="btn btn-outline-primary" type="button" id="button-addon2">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fas fa-search"></i>
                     Search
                 </button>
             </div>
-            <div class="input-group mb-3 ms-2">
+            <div>
                 <EditForm Model="getProductCategoryById" OnValidSubmit="GetProductsByCategoryId" Enhance FormName="FilteringForm">
-                    <InputSelect class="form-select" id="inputGroupSelect02" @bind-Value="getProductCategoryById.CategoryId">
-                        <option selected>All</option>
-                        @foreach(var category in _categories)
-                        {
-                            <option value="@category.Id">@category.Name</option>
-                        }
-                    </InputSelect>
-                    <button class="btn btn-outline-primary" type="submit" id="button-addon2">
-                        <i class="fa-solid fa-filter"></i>
-                        Filter
-                    </button>
+                    <div class="input-group mb-3 ms-2">
+                        <InputSelect class="form-select" id="inputGroupSelect02" @bind-Value="getProductCategoryById.CategoryId">
+                            <option selected>All</option>
+                            @foreach(var category in _categories)
+                            {
+                                <option value="@category.Id">@category.Name</option>
+                            }
+                        </InputSelect>
+                        <button class="btn btn-outline-primary" type="submit" id="button-addon2">
+                            <i class="fas fa-filter"></i>
+                            Filter
+                        </button>
+                    </div>
                 </EditForm>
             </div>
-
         </div>
-        <div class="margin-auto mb-3 table-responsive tableau">
+        <div class="container margin-auto mb-3 table-responsive tableau">
             <table class="table table-hover table-striped table-sm ">
                 <thead class="rounded-3 table-header">
                     <tr>
@@ -74,7 +76,6 @@ else
                         <th>Description</th>
                         <th>Price</th>
                         <th>Stock</th>
-                        <th>Category</th>
                         <th>Operations</th>
                     </tr>
                 </thead>
@@ -91,18 +92,22 @@ else
                                 <img src="@product.ImageUrl" style="width: 20px; height:20px; border-radius: 50%;">
                             </td>
                             <td>@product.Name</td>
-                            <td>@product.Description</td>
+                            <td>
+                                <button type="button" class="btn btn-info text-light" data-bs-toggle="modal" 
+                                        data-bs-target="#modal_@product.Id">
+                                    Description
+                                </button>
+                            </td>
                             <td>@product.Price</td>
                             <td>@product.Stock</td>
-                            <td>@product?.Category?.Name</td>
                             <td>
-                                <div>
+                                <div class="btn btn-group">
                                     <button class="btn btn-danger" @onclick="() => Delete(product.Id)">
-                                        <i class="fa fa-trash me-1"></i> Delete
+                                        <i class="fa fa-trash me-1"></i> 
                                     </button>
                                     <a href="admin/editProduct/@product?.Id" class="btn btn-success">
                                         <i class="fa fa-edit me-1"></i>
-                                        Update</a>
+                                        </a>
                                 </div>
                             </td>
                         </tr>
@@ -116,6 +121,31 @@ else
             </div>
         </div>
     </div>
+
+    @foreach(var item in _products)
+    {
+        <div class="modal fade" id="modal_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex">
+                        <img class="@item.ImageUrl" style="width: 20px; height:20px; border-radius: 50%;" />
+                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">@item.Name</h1>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <b>Category: <span class="text-primary">@item.Category?.Name</span></b>
+                    <br>
+                    <p >@item.Description</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    }
 }
 
 @code {
@@ -125,6 +155,7 @@ else
     [SupplyParameterFromForm(FormName ="FilteringForm")]
     private GetProductCategoryDto? getProductCategoryById {get;set;}=new();
     private int count { get; set; }
+    [Inject] private IJSRuntime JS{ get; set; }
 
     protected async override Task OnInitializedAsync()
     {
@@ -136,6 +167,7 @@ else
         {
             _products = _bookStateService.Models;
         }
+        _categories=await _unitOfWork.CategoryService.GetAllCategoriesAsync();
         _bookStateService.OnBooksChanged += StateHasChanged;
     }
     protected override void OnParametersSet()
@@ -151,7 +183,7 @@ else
         _products=await _unitOfWork
                         .ProductService
                         .GetAllProductsAsync();
-        _bookStateService.SetBooks(_products);
+        _bookStateService.SetItems(_products);
     }
 
     private async Task Delete(int id)
@@ -160,10 +192,10 @@ else
         {
             var product= _products.FirstOrDefault(p=>p.Id==id);
             await _unitOfWork.ProductService.DeleteProductAsync(id);
-            _bookStateService.Remove(product);
+            _bookStateService.RemoveItem(product);
         }catch(Exception ex)
         {
-            await _js.InvokeVoidAsync("console.log",ex);
+            await JS.InvokeVoidAsync("console.log",ex);
             errorMessage="Failed to deleted this item";
            await Task.Run(async () =>
             {

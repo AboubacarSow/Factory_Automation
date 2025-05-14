@@ -595,9 +595,10 @@ main[b-tgn1r5xgxa] {
 }
 /* _content/FactoryProject/Components/Pages/Authentication/Accessdenied.razor.rz.scp.css */
 .accessDenied[b-lvb66p6y9q]{
-    background-color: #e1e1e1;
+    background-color: #f4f4f4;
     height: 100vh;
     padding-top: 30px;
+    overflow-y: hidden;
 }
 
 .content[b-lvb66p6y9q]{

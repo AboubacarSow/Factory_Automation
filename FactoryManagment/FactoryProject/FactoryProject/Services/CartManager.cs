@@ -16,10 +16,9 @@ public class CartManager : ICartService
 
     public async Task<bool> CreateCartAsync(CreateCartDto createcartdto)
     {
-        var response = await _client.GetAsync($"cart/add?{createcartdto.quantity}&{createcartdto.productId}");
+        var response = await _client.GetAsync($"cart/add?quantity={createcartdto.quantity}&productId={createcartdto.productId}");
         return response.IsSuccessStatusCode;
     }
-
     public async Task<bool> DeleteCartAsync(int id)
     {
         var response = await _client.DeleteAsync($"cart/{id}");

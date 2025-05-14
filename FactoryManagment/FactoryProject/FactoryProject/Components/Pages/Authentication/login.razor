@@ -57,7 +57,7 @@
 @code {
 
     [Inject]
-    private  IJSRuntime jS{ get; set; }
+    private  IJSRuntime JS{ get; set; }
     private string? errorMessage = String.Empty;
     [SupplyParameterFromForm(FormName = "LoginForm")]
     private LoginModel loginModel { get; set; } = new();
@@ -86,7 +86,7 @@
 
         }catch(Exception ex)
         {
-            await jS.InvokeVoidAsync("console.log", $"{ex}");
+            await JS.InvokeVoidAsync("console.log", $"{ex}");
         }
     }
     private string GetInputClass(string fieldName)
