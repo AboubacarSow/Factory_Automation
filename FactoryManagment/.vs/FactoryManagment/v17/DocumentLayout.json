@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\contracts\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\contracts\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\services\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\services\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Contracts\\IOrderService.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Contracts\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Contracts\\IOrderService.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Contracts\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:18:04.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OrderManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\OrderManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\OrderManager.cs",
               "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\OrderManager.cs",
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\OrderManager.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T12:16:59.887Z",
               "EditorCaption": ""
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CartManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\CartManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\CartManager.cs",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CreatePersonal.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\CreatePersonal.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\CreatePersonal.razor",
