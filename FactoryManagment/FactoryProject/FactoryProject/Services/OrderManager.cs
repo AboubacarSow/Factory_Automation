@@ -35,7 +35,7 @@ public class OrderManager: IOrderService
         return orders.FirstOrDefault(or => or.id == orderId)!;
     }
 
-    public async Task<List<ResultOrderDto>> GetOrdersByUserAsync(int userId)
+    public async Task<List<ResultOrderDto>> GetOrdersByUserAsync()
     {
         var response = await _client.GetAsync("order/getByUser");
         if (!response.IsSuccessStatusCode) return [];

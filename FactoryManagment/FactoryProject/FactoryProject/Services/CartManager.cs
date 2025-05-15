@@ -41,7 +41,7 @@ public class CartManager : ICartService
 
     public async Task<List<ResultCartDto>> GetCartsByUser(int userId)
     {
-        var response = await _client.GetAsync($"cart/{userId}");
+        var response = await _client.GetAsync($"cart");
         if (!response.IsSuccessStatusCode)
             throw new Exception("There is may be no cart for this user");
         var jsonData = await response.Content.ReadAsStringAsync();
