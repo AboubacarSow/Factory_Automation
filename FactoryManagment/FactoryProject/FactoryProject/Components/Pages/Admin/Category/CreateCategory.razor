@@ -1,11 +1,17 @@
-@page "/admin/createCategory"
-@layout AuthLayout
+@page "/admin/createcategory"
+@layout AdminLayout
 @inject IUnitOfWork _unitOfWork
 @inject GenericStateService<ResultCategoryDto> _categoryStateService
 @inject NavigationManager _navigationManager
 
+<!-- Header Content  Begin-->
 <PageTitle>Create Category</PageTitle>
 
+<HeadContent>
+    <link href="/css/creating.css" rel="stylesheet" />
+</HeadContent>
+
+<!-- Header Content  Begin-->
 <div class="form-container mx-3">
      <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Adding Category</h4>
     <hr class="mb-4" />

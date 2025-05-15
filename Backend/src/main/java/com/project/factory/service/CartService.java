@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -45,14 +46,26 @@ public class CartService
 
         int id = userRepository.findUserIdByEmail(email);
 
-        return cartRepository.createCart(quantity, productId, id);
+        LocalDateTime createdAt  = LocalDateTime.now();
+
+        return cartRepository.createCart(quantity,createdAt,productId, id);
     }
 
 
-
-    public List<Cart> getAllCarts()
+    public List<Cart> getAllCartsByUserName(String username)
     {
-        return cartRepository.findAll();
+        if (username == null || username.isEmpty())
+        {
+            throw new IllegalArgumentException("Username cannot be empty");
+        }
+
+        int userId = userRepository.findUserIdByEmail(username);
+
+        if (userId <= 0)
+        {
+            throw new IllegalArgumentException("Invalid user ID");
+        }
+       return cartRepository.findAllByUserId(userId);
     }
 
     @Transactional
@@ -83,10 +96,6 @@ public class CartService
         return cartRepository.updateCart(cartId, quantity, id);
     }
 
-    public List<Cart> getAllCartsByUserId(int userId)
-    {
-       return cartRepository.findAllByUserId(userId);
-    }
 
     @Transactional
     public void deleteCart(int cartId)

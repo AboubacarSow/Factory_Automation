@@ -40,7 +40,6 @@ C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\Factor
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Login.razor.rz.scp.css
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\NotFoundPage.razor.rz.scp.css
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Authentication\Register.razor.rz.scp.css
-C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Biscuits.razor.rz.scp.css
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Cart.razor.rz.scp.css
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Client\Order.razor.rz.scp.css
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\bundle\FactoryProject.styles.css
@@ -80,3 +79,6 @@ C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\Factor
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryP.4CDDE59B.Up2Date
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\FactoryProject.genruntimeconfig.cache
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\ref\FactoryProject.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Admin\Products\CreateProduct.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Admin\Products\UpdateProduct.razor.rz.scp.css
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

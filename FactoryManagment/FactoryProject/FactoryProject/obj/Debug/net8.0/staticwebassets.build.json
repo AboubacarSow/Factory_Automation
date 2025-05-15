@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cAuZ5rmQIMKywSkNc/14RkiadNU2W579hiH5n9greIw=",
+  "Hash": "7M9l9Wy7mm56ooZXLoZBpboj/xVipcrB0oCfJCpyxQ8=",
   "Source": "FactoryProject",
   "BasePath": "_content/FactoryProject",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "FactoryProject.Client",
       "GetPublishAssetsTargets": "ComputeFilesToPublish;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "_PublishingBlazorWasmProject=true;BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true",
+      "AdditionalPublishProperties": "_PublishingBlazorWasmProject=true;BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalBuildPropertiesToRemove": "RuntimeIdentifier;SelfContained;WebPublishProfileFile;TargetFramework"
     }
   ],
@@ -50,8 +50,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "1pr1tx4hya",
-      "Integrity": "i9xf6DldPO7Yt8gx6cWOvWy9Vy6+G5hjGX6PHciwGFQ=",
+      "Fingerprint": "qnjrldyolk",
+      "Integrity": "RkXDp5pS98oTjXdybUkuVziKUReoh0OvnQBVSvC82IU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -239,8 +239,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "v4q266vsyq",
-      "Integrity": "MYEYpDMO3+nuRH1vpzN5Rw9x6jNbM/i/WoYnDLJF3AY=",
+      "Fingerprint": "0ax3vhvjiw",
+      "Integrity": "yCHa9qhTa8GX6vv1VFJCtVo02u3znSQsi3MFFR6sVAM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\FactoryProject.Client.pdb"
@@ -260,8 +260,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "wgwlcmf71y",
-      "Integrity": "oOubTEmoG9Jf2qsUdOKEg4dh5PDwnrbiXBbA5Saov2g=",
+      "Fingerprint": "ptxe59zwym",
+      "Integrity": "Q0QkkWu68rXq58GilWeidxF2gfBI+WuRJBsoFTEISjM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\FactoryProject.Client.wasm"
@@ -5181,7 +5181,7 @@
       "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6nlof4nohv-4t8nfwwb7l.gz"
     },
     {
-      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6q3l2yq0tl-1pr1tx4hya.gz",
+      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6q3l2yq0tl-qnjrldyolk.gz",
       "SourceId": "FactoryProject.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -5195,11 +5195,11 @@
       "RelatedAsset": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7ufkg1x83a",
-      "Integrity": "0a5+fjEAqDnGeaOsI4wmI5wJuwjDacvZryGZ4FmfOlA=",
+      "Fingerprint": "205rchpsdj",
+      "Integrity": "ElLc6V5ORTRlsxmMnVzRjcRtBFdd0TyMM2f+UPbeFOc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6q3l2yq0tl-1pr1tx4hya.gz"
+      "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6q3l2yq0tl-qnjrldyolk.gz"
     },
     {
       "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6vv6ylwgar-0u230n2kjo.gz",
@@ -6609,7 +6609,7 @@
       "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\j67a8fqh9y-ot9iv0vx96.gz"
     },
     {
-      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jaz2iyvndq-wgwlcmf71y.gz",
+      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jaz2iyvndq-ptxe59zwym.gz",
       "SourceId": "FactoryProject.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6623,11 +6623,11 @@
       "RelatedAsset": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\FactoryProject.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "2ke4dnhgzv",
-      "Integrity": "shsoDljK/dMPsAEUQliTovOKsS2luEFw67sjC+ePZbk=",
+      "Fingerprint": "bob5lix7ni",
+      "Integrity": "W1fRI7lAQmgHQS1sGDzQJFPZRv/W+WgnOmX/uIGQqNM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jaz2iyvndq-wgwlcmf71y.gz"
+      "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jaz2iyvndq-ptxe59zwym.gz"
     },
     {
       "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jc0l3abipy-2whiw221s3.gz",
@@ -8415,7 +8415,7 @@
       "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xrgc5pmlip-b368d6b868.gz"
     },
     {
-      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xtu4h4j0j4-v4q266vsyq.gz",
+      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xtu4h4j0j4-0ax3vhvjiw.gz",
       "SourceId": "FactoryProject.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -8429,11 +8429,11 @@
       "RelatedAsset": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\FactoryProject.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "w7jkengd9k",
-      "Integrity": "tJeC7mShbGWBEXTpLv3DsWY7xee1iCQNlJej3vwEKiI=",
+      "Fingerprint": "nfavw8r0dw",
+      "Integrity": "bcksSF/2BcG9HjpKv8ez6twERXkzik4rFmzIVhIgiC0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xtu4h4j0j4-v4q266vsyq.gz"
+      "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xtu4h4j0j4-0ax3vhvjiw.gz"
     },
     {
       "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xxq8cq2ma6-e72u1bmwvr.gz",
@@ -8702,8 +8702,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "cbfppa239u",
-      "Integrity": "OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4=",
+      "Fingerprint": "7e9e92brrn",
+      "Integrity": "D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css"
@@ -8723,8 +8723,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "cbfppa239u",
-      "Integrity": "OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4=",
+      "Fingerprint": "7e9e92brrn",
+      "Integrity": "D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css"
@@ -8814,6 +8814,27 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\creating.css",
+      "SourceId": "FactoryProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\",
+      "BasePath": "_content/FactoryProject",
+      "RelativePath": "css/creating#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oynsxfbblu",
+      "Integrity": "UDXxOXC3yjhR1SOx3lLZKqgKnjk7dMaxC6iFV8QD/Pw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\creating.css"
+    },
+    {
       "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\defaultlayout.css",
       "SourceId": "FactoryProject",
       "SourceType": "Discovered",
@@ -8835,6 +8856,27 @@
       "OriginalItemSpec": "wwwroot\\css\\defaultlayout.css"
     },
     {
+      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\listing.css",
+      "SourceId": "FactoryProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\",
+      "BasePath": "_content/FactoryProject",
+      "RelativePath": "css/listing#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b0gihouzg3",
+      "Integrity": "dS29FX8a2E2o7g9XmpWr/HjcN8AkdvfIK1heCNsk0bQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\listing.css"
+    },
+    {
       "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\login.css",
       "SourceId": "FactoryProject",
       "SourceType": "Discovered",
@@ -8854,6 +8896,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\product.css",
+      "SourceId": "FactoryProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\",
+      "BasePath": "_content/FactoryProject",
+      "RelativePath": "css/product#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "miypnrn18t",
+      "Integrity": "/u3DjNQvgttMCdWKB5b2uB+r4QAzPaVZjtWfYee8RtA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\product.css"
+    },
+    {
+      "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\update.css",
+      "SourceId": "FactoryProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\",
+      "BasePath": "_content/FactoryProject",
+      "RelativePath": "css/update#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6ztzc7tgs",
+      "Integrity": "Wbq8pTr9u21sYQZKt+0CgMAshH2N+tvoxuCDV5wKY3A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\update.css"
     },
     {
       "Identity": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\favicon.ico",
@@ -9174,28 +9258,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"i9xf6DldPO7Yt8gx6cWOvWy9Vy6+G5hjGX6PHciwGFQ=\""
+          "Value": "\"RkXDp5pS98oTjXdybUkuVziKUReoh0OvnQBVSvC82IU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 21:59:48 GMT"
+          "Value": "Thu, 15 May 2025 08:53:15 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-i9xf6DldPO7Yt8gx6cWOvWy9Vy6+G5hjGX6PHciwGFQ="
+          "Value": "sha256-RkXDp5pS98oTjXdybUkuVziKUReoh0OvnQBVSvC82IU="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6q3l2yq0tl-1pr1tx4hya.gz",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6q3l2yq0tl-qnjrldyolk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000114351058"
+          "Quality": "0.000114377216"
         }
       ],
       "ResponseHeaders": [
@@ -9213,15 +9297,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8744"
+          "Value": "8742"
         },
         {
           "Name": "ETag",
-          "Value": "\"0a5+fjEAqDnGeaOsI4wmI5wJuwjDacvZryGZ4FmfOlA=\""
+          "Value": "\"ElLc6V5ORTRlsxmMnVzRjcRtBFdd0TyMM2f+UPbeFOc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 21:57:54 GMT"
+          "Value": "Thu, 15 May 2025 08:53:04 GMT"
         },
         {
           "Name": "Vary",
@@ -9233,19 +9317,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"i9xf6DldPO7Yt8gx6cWOvWy9Vy6+G5hjGX6PHciwGFQ=\""
+          "Value": "W/\"RkXDp5pS98oTjXdybUkuVziKUReoh0OvnQBVSvC82IU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-i9xf6DldPO7Yt8gx6cWOvWy9Vy6+G5hjGX6PHciwGFQ="
+          "Value": "sha256-RkXDp5pS98oTjXdybUkuVziKUReoh0OvnQBVSvC82IU="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6q3l2yq0tl-1pr1tx4hya.gz",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\6q3l2yq0tl-qnjrldyolk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9262,7 +9346,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8744"
+          "Value": "8742"
         },
         {
           "Name": "Content-Type",
@@ -9270,11 +9354,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0a5+fjEAqDnGeaOsI4wmI5wJuwjDacvZryGZ4FmfOlA=\""
+          "Value": "\"ElLc6V5ORTRlsxmMnVzRjcRtBFdd0TyMM2f+UPbeFOc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 21:57:54 GMT"
+          "Value": "Thu, 15 May 2025 08:53:04 GMT"
         },
         {
           "Name": "Vary",
@@ -9284,7 +9368,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0a5+fjEAqDnGeaOsI4wmI5wJuwjDacvZryGZ4FmfOlA="
+          "Value": "sha256-ElLc6V5ORTRlsxmMnVzRjcRtBFdd0TyMM2f+UPbeFOc="
         }
       ]
     },
@@ -10399,7 +10483,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16364"
+          "Value": "16388"
         },
         {
           "Name": "Content-Type",
@@ -10407,28 +10491,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MYEYpDMO3+nuRH1vpzN5Rw9x6jNbM/i/WoYnDLJF3AY=\""
+          "Value": "\"yCHa9qhTa8GX6vv1VFJCtVo02u3znSQsi3MFFR6sVAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:29 GMT"
+          "Value": "Wed, 14 May 2025 11:10:34 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MYEYpDMO3+nuRH1vpzN5Rw9x6jNbM/i/WoYnDLJF3AY="
+          "Value": "sha256-yCHa9qhTa8GX6vv1VFJCtVo02u3znSQsi3MFFR6sVAM="
         }
       ]
     },
     {
       "Route": "_framework/FactoryProject.Client.pdb",
-      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xtu4h4j0j4-v4q266vsyq.gz",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xtu4h4j0j4-0ax3vhvjiw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000096339114"
+          "Quality": "0.000096006144"
         }
       ],
       "ResponseHeaders": [
@@ -10446,15 +10530,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10379"
+          "Value": "10415"
         },
         {
           "Name": "ETag",
-          "Value": "\"tJeC7mShbGWBEXTpLv3DsWY7xee1iCQNlJej3vwEKiI=\""
+          "Value": "\"bcksSF/2BcG9HjpKv8ez6twERXkzik4rFmzIVhIgiC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:29 GMT"
+          "Value": "Wed, 14 May 2025 11:10:34 GMT"
         },
         {
           "Name": "Vary",
@@ -10466,19 +10550,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MYEYpDMO3+nuRH1vpzN5Rw9x6jNbM/i/WoYnDLJF3AY=\""
+          "Value": "W/\"yCHa9qhTa8GX6vv1VFJCtVo02u3znSQsi3MFFR6sVAM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MYEYpDMO3+nuRH1vpzN5Rw9x6jNbM/i/WoYnDLJF3AY="
+          "Value": "sha256-yCHa9qhTa8GX6vv1VFJCtVo02u3znSQsi3MFFR6sVAM="
         }
       ]
     },
     {
       "Route": "_framework/FactoryProject.Client.pdb.gz",
-      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xtu4h4j0j4-v4q266vsyq.gz",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\xtu4h4j0j4-0ax3vhvjiw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10495,7 +10579,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10379"
+          "Value": "10415"
         },
         {
           "Name": "Content-Type",
@@ -10503,11 +10587,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tJeC7mShbGWBEXTpLv3DsWY7xee1iCQNlJej3vwEKiI=\""
+          "Value": "\"bcksSF/2BcG9HjpKv8ez6twERXkzik4rFmzIVhIgiC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:29 GMT"
+          "Value": "Wed, 14 May 2025 11:10:34 GMT"
         },
         {
           "Name": "Vary",
@@ -10517,7 +10601,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tJeC7mShbGWBEXTpLv3DsWY7xee1iCQNlJej3vwEKiI="
+          "Value": "sha256-bcksSF/2BcG9HjpKv8ez6twERXkzik4rFmzIVhIgiC0="
         }
       ]
     },
@@ -10544,28 +10628,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oOubTEmoG9Jf2qsUdOKEg4dh5PDwnrbiXBbA5Saov2g=\""
+          "Value": "\"Q0QkkWu68rXq58GilWeidxF2gfBI+WuRJBsoFTEISjM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:30 GMT"
+          "Value": "Wed, 14 May 2025 11:10:34 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oOubTEmoG9Jf2qsUdOKEg4dh5PDwnrbiXBbA5Saov2g="
+          "Value": "sha256-Q0QkkWu68rXq58GilWeidxF2gfBI+WuRJBsoFTEISjM="
         }
       ]
     },
     {
       "Route": "_framework/FactoryProject.Client.wasm",
-      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jaz2iyvndq-wgwlcmf71y.gz",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jaz2iyvndq-ptxe59zwym.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000266808965"
+          "Quality": "0.000264340471"
         }
       ],
       "ResponseHeaders": [
@@ -10583,15 +10667,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3747"
+          "Value": "3782"
         },
         {
           "Name": "ETag",
-          "Value": "\"shsoDljK/dMPsAEUQliTovOKsS2luEFw67sjC+ePZbk=\""
+          "Value": "\"W1fRI7lAQmgHQS1sGDzQJFPZRv/W+WgnOmX/uIGQqNM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:30 GMT"
+          "Value": "Wed, 14 May 2025 11:10:34 GMT"
         },
         {
           "Name": "Vary",
@@ -10603,19 +10687,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oOubTEmoG9Jf2qsUdOKEg4dh5PDwnrbiXBbA5Saov2g=\""
+          "Value": "W/\"Q0QkkWu68rXq58GilWeidxF2gfBI+WuRJBsoFTEISjM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oOubTEmoG9Jf2qsUdOKEg4dh5PDwnrbiXBbA5Saov2g="
+          "Value": "sha256-Q0QkkWu68rXq58GilWeidxF2gfBI+WuRJBsoFTEISjM="
         }
       ]
     },
     {
       "Route": "_framework/FactoryProject.Client.wasm.gz",
-      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jaz2iyvndq-wgwlcmf71y.gz",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject.Client\\obj\\Debug\\net8.0\\compressed\\jaz2iyvndq-ptxe59zwym.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10632,7 +10716,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3747"
+          "Value": "3782"
         },
         {
           "Name": "Content-Type",
@@ -10640,11 +10724,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"shsoDljK/dMPsAEUQliTovOKsS2luEFw67sjC+ePZbk=\""
+          "Value": "\"W1fRI7lAQmgHQS1sGDzQJFPZRv/W+WgnOmX/uIGQqNM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:30 GMT"
+          "Value": "Wed, 14 May 2025 11:10:34 GMT"
         },
         {
           "Name": "Vary",
@@ -10654,7 +10738,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-shsoDljK/dMPsAEUQliTovOKsS2luEFw67sjC+ePZbk="
+          "Value": "sha256-W1fRI7lAQmgHQS1sGDzQJFPZRv/W+WgnOmX/uIGQqNM="
         }
       ]
     },
@@ -37729,6 +37813,88 @@
       ]
     },
     {
+      "Route": "css/creating.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\creating.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "966"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDXxOXC3yjhR1SOx3lLZKqgKnjk7dMaxC6iFV8QD/Pw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 09:10:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UDXxOXC3yjhR1SOx3lLZKqgKnjk7dMaxC6iFV8QD/Pw="
+        }
+      ]
+    },
+    {
+      "Route": "css/creating.oynsxfbblu.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\creating.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "966"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDXxOXC3yjhR1SOx3lLZKqgKnjk7dMaxC6iFV8QD/Pw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 09:10:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oynsxfbblu"
+        },
+        {
+          "Name": "label",
+          "Value": "css/creating.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UDXxOXC3yjhR1SOx3lLZKqgKnjk7dMaxC6iFV8QD/Pw="
+        }
+      ]
+    },
+    {
       "Route": "css/defaultlayout.bxldufe8e1.css",
       "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\defaultlayout.css",
       "Selectors": [],
@@ -37807,6 +37973,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfV+GxTYNyOZpi8h+zvJY26wz8Q9t0U9YUPyMhDGdzo="
+        }
+      ]
+    },
+    {
+      "Route": "css/listing.b0gihouzg3.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\listing.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3953"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dS29FX8a2E2o7g9XmpWr/HjcN8AkdvfIK1heCNsk0bQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 09:06:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b0gihouzg3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/listing.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dS29FX8a2E2o7g9XmpWr/HjcN8AkdvfIK1heCNsk0bQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/listing.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\listing.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3953"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dS29FX8a2E2o7g9XmpWr/HjcN8AkdvfIK1heCNsk0bQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 09:06:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dS29FX8a2E2o7g9XmpWr/HjcN8AkdvfIK1heCNsk0bQ="
         }
       ]
     },
@@ -37893,6 +38141,260 @@
       ]
     },
     {
+      "Route": "css/product.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\product.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/u3DjNQvgttMCdWKB5b2uB+r4QAzPaVZjtWfYee8RtA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 08:59:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/u3DjNQvgttMCdWKB5b2uB+r4QAzPaVZjtWfYee8RtA="
+        }
+      ]
+    },
+    {
+      "Route": "css/product.miypnrn18t.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\product.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/u3DjNQvgttMCdWKB5b2uB+r4QAzPaVZjtWfYee8RtA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 08:59:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "miypnrn18t"
+        },
+        {
+          "Name": "label",
+          "Value": "css/product.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/u3DjNQvgttMCdWKB5b2uB+r4QAzPaVZjtWfYee8RtA="
+        }
+      ]
+    },
+    {
+      "Route": "css/update.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\update.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wbq8pTr9u21sYQZKt+0CgMAshH2N+tvoxuCDV5wKY3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 09:10:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wbq8pTr9u21sYQZKt+0CgMAshH2N+tvoxuCDV5wKY3A="
+        }
+      ]
+    },
+    {
+      "Route": "css/update.h6ztzc7tgs.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\update.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wbq8pTr9u21sYQZKt+0CgMAshH2N+tvoxuCDV5wKY3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 09:10:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6ztzc7tgs"
+        },
+        {
+          "Name": "label",
+          "Value": "css/update.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wbq8pTr9u21sYQZKt+0CgMAshH2N+tvoxuCDV5wKY3A="
+        }
+      ]
+    },
+    {
+      "Route": "FactoryProject.7e9e92brrn.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28490"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 08:52:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7e9e92brrn"
+        },
+        {
+          "Name": "label",
+          "Value": "FactoryProject.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI="
+        }
+      ]
+    },
+    {
+      "Route": "FactoryProject.7e9e92brrn.styles.css",
+      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28490"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 08:52:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7e9e92brrn"
+        },
+        {
+          "Name": "label",
+          "Value": "FactoryProject.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI="
+        }
+      ]
+    },
+    {
       "Route": "FactoryProject.bundle.scp.css",
       "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
       "Selectors": [],
@@ -37903,7 +38405,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27198"
+          "Value": "28490"
         },
         {
           "Name": "Content-Type",
@@ -37911,11 +38413,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4=\""
+          "Value": "\"D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:36 GMT"
+          "Value": "Thu, 15 May 2025 08:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -37925,97 +38427,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4="
-        }
-      ]
-    },
-    {
-      "Route": "FactoryProject.cbfppa239u.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27198"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cbfppa239u"
-        },
-        {
-          "Name": "label",
-          "Value": "FactoryProject.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4="
-        }
-      ]
-    },
-    {
-      "Route": "FactoryProject.cbfppa239u.styles.css",
-      "AssetFile": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FactoryProject.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27198"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cbfppa239u"
-        },
-        {
-          "Name": "label",
-          "Value": "FactoryProject.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4="
+          "Value": "sha256-D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI="
         }
       ]
     },
@@ -38030,7 +38442,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27198"
+          "Value": "28490"
         },
         {
           "Name": "Content-Type",
@@ -38038,11 +38450,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4=\""
+          "Value": "\"D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 20:43:36 GMT"
+          "Value": "Thu, 15 May 2025 08:52:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38052,7 +38464,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OOW4EL9JwZGlTvn172/XJpxCDprF060bF/Xyslx2Na4="
+          "Value": "sha256-D4jjozbgnqRLNKQhJoR3E3cNRvPcqokbsAgelWkE/mI="
         }
       ]
     },

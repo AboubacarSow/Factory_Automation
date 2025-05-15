@@ -1,4 +1,5 @@
 ﻿@page "/cart"
+@inject UnitOfWork unitOfWork
 
 <PageTitle>Cart</PageTitle>
 
@@ -159,6 +160,13 @@
     </div>
 </div>
 @code {
+    private List<ResultCartDto> cartProducts = [];
+    private string userid;
+    
+    protected override async Task OnInitializedAsync(){
+
+    }
+
     void CartModel()
     {
 

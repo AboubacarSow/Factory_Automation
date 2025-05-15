@@ -1,6 +1,9 @@
-﻿@inherits LayoutComponentBase
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@inherits LayoutComponentBase
 
-
+<HeadContent>
+    <link href="/css/product.css" rel="stylesheet" />
+</HeadContent>
 
 <div class="page">
     <div class="sidebar">
@@ -10,8 +13,8 @@
     <main>
         <div class="page-top">
             <div class="search-bar"> 
-                <img src="/icons/find.png" />
                 <input type="search" name="search-bar" class="" placeholder="Search" />
+                <button><img src="/icons/find.png" /></button>
             </div>
             <div class="navigation-item">
             <NavLink href="order">
@@ -33,9 +36,20 @@
                 </div>
             </NavLink>
             </div>
-         
+            @* <AuthorizeView Roles="ADMIN">
+                <div class="navigation-item">
+                    <NavLink href="admin/products">
+                        <div class="admin-icon">
+                            <img src="/icons/users.png" />
+                        </div>
+                        <div>
+                            Admin
+                        </div>
+                    </NavLink>
+                </div>
+            </AuthorizeView> *@
             <div class="navigation-item">
-            <NavLink href="$">
+            <NavLink href="logoutcontrol">
                 <div class="logout-icon">
                     <img src="/icons/logout.png" />
                 </div>

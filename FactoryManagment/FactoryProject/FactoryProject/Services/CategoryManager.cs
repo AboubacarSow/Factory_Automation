@@ -47,7 +47,7 @@ public class CategoryManager : ICategoryService
     {
         var jsonData = JsonConvert.SerializeObject(updateCategoryDto);
         var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-        var response = await _client.PutAsync("category/udpate", content);
+        var response = await _client.PostAsync("category/udpate", content);
         return response.IsSuccessStatusCode;
     }
 }

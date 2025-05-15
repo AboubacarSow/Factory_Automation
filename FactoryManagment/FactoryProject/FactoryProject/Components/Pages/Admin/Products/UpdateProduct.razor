@@ -1,4 +1,4 @@
-@page "/admin/updateProduct/{productId:int}"
+@page "/admin/editProduct/{productId:int}"
 @layout AdminLayout
 @attribute [Authorize(Roles="ADMIN")]
 @inject IUnitOfWork _unitOfWork
@@ -7,6 +7,7 @@
 @inject NavigationManager _navigationManager
 
 <PageTitle>Update Product</PageTitle>
+
 
 <div class="form-container mx-3">
     <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Product</h4>

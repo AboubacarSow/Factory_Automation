@@ -13,7 +13,6 @@ public class CartManager : ICartService
     {
         _client = clientFactory.CreateClient("FactoryApi");
     }
-
     public async Task<bool> CreateCartAsync(CreateCartDto createcartdto)
     {
         var response = await _client.GetAsync($"cart/add?quantity={createcartdto.quantity}&productId={createcartdto.productId}");
@@ -25,14 +24,19 @@ public class CartManager : ICartService
         return response.IsSuccessStatusCode;
     }
 
-    public Task<List<ResultCartDto>> GetAllCartAsync()
+    public async Task<List<ResultCartDto>> GetAllCartAsync()
     {
-        throw new NotImplementedException();
+        var response = await _client.GetAsync("cart");
+        if (!response.IsSuccessStatusCode)
+            return [];
+        var jsonData = await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<List<ResultCartDto>>(jsonData)!;
     }
 
-    public Task<ResultCartDto> GetCartByIdAsync(int cartId)
+    public async Task<ResultCartDto> GetCartByIdAsync(int cartId)
     {
-        throw new NotImplementedException();
+        var carts = await GetAllCartAsync();
+        return carts.FirstOrDefault(c => c.id.Equals(cartId))!;
     }
 
     public async Task<List<ResultCartDto>> GetCartsByUser(int userId)
@@ -43,9 +47,10 @@ public class CartManager : ICartService
         var jsonData = await response.Content.ReadAsStringAsync();
         return JsonConvert.DeserializeObject<List<ResultCartDto>>(jsonData)!;
     }
-
-    public Task<bool> UpdateCartAsync(UpdateCartDto updatecartdto)
+    public async Task<bool> UpdateCartAsync(UpdateCartDto updatecartdto)
     {
-        throw new NotImplementedException();
+        var response = await _client
+                    .GetAsync($"cart/update?cartId={updatecartdto.cartId}&quantity={updatecartdto.quantity}");
+        return response.IsSuccessStatusCode;
     }
 }

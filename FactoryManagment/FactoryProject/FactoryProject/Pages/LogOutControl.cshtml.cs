@@ -2,8 +2,7 @@ using FactoryProject.Contracts;
 using FactoryProject.Infrastructure.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Runtime.InteropServices;
-using System.Threading.Tasks;
+
 
 namespace FactoryProject.Pages
 {
