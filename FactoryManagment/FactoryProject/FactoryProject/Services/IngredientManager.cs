@@ -1,5 +1,8 @@
 using FactoryProject.Contracts;
 using FactoryProject.Models.IngredientDtos;
+using Newtonsoft.Json;
+using System.Net.WebSockets;
+using System.Text;
 
 namespace FactoryProject.Services;
 
@@ -10,13 +13,38 @@ public class IngredientManager : IIngredientService
     {
         _client = clientFactory.CreateClient("FactoryApi");
     }
-    public Task<bool> CreateIngredientAsync(CreateIngredientDto createIngredientDto)
+    public async Task<bool> CreateIngredientAsync(CreateIngredientDto createIngredientDto)
     {
-        throw new NotImplementedException();
+        var jsonData= JsonConvert.SerializeObject(createIngredientDto);
+        var content=new StringContent(jsonData,Encoding.UTF8,"application/json");
+        var response=await _client.PostAsync("ingredient/add", content);
+        return response.IsSuccessStatusCode;
     }
 
-    public Task<List<ResultIngredientDto>> GetAllIngredientsAsync()
+    public async Task<bool> DeleteIngredientAsync(int id)
     {
-        throw new NotImplementedException();
+        var response = await _client.DeleteAsync($"ingredient/delete/{id}");
+        return response.IsSuccessStatusCode;
+    }
+
+    public async Task<List<ResultIngredientDto>> GetAllIngredientsAsync()
+    {
+        var response = await _client.GetAsync("ingredient");
+        if (!response.IsSuccessStatusCode)
+            return [];
+        var jsonData= await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<List<ResultIngredientDto>>(jsonData)!;
+    }
+    public async Task<ResultIngredientDto> GetIngredientByIdAsync(int id)
+    {
+        var ingredients=await GetAllIngredientsAsync();
+        return ingredients.FirstOrDefault(i => i.id == id)!;
+    }
+    public async Task<bool> UpdateIngredientAsync(UpdateIngredientDto ingredientDto)
+    {
+        var jsonData = JsonConvert.SerializeObject(ingredientDto);
+        var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+        var response = await _client.PutAsync("ingredient/update", content);
+        return response.IsSuccessStatusCode;
     }
 }

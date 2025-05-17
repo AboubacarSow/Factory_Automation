@@ -39,15 +39,15 @@ public class CategoryManager : ICategoryService
     public async Task<ResultCategoryDto> GetCategoryByIdAsync(int id)
     {
         var categories = await GetAllCategoriesAsync();
-        return  categories.FirstOrDefault(c => c.Id.Equals(id))!;
+        return  categories.FirstOrDefault(c => c.id.Equals(id))!;
       
     }
 
-    public async Task<bool> UpdateCategoryAsync(UpdateCategoryDto updateCategoryDto)
+    public async Task<HttpResponseMessage> UpdateCategoryAsync(UpdateCategoryDto updateCategoryDto)
     {
-        var jsonData = JsonConvert.SerializeObject(updateCategoryDto);
-        var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-        var response = await _client.PostAsync("category/udpate", content);
-        return response.IsSuccessStatusCode;
+            var jsonData = JsonConvert.SerializeObject(updateCategoryDto);
+            var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var response = await _client.PostAsync("category/update", content);
+            return response;
     }
 }

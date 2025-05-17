@@ -20,7 +20,7 @@ public class CartManager : ICartService
     }
     public async Task<bool> DeleteCartAsync(int id)
     {
-        var response = await _client.DeleteAsync($"cart/{id}");
+        var response = await _client.DeleteAsync($"cart/delete?cartId={id}");
         return response.IsSuccessStatusCode;
     }
 
@@ -39,7 +39,7 @@ public class CartManager : ICartService
         return carts.FirstOrDefault(c => c.id.Equals(cartId))!;
     }
 
-    public async Task<List<ResultCartDto>> GetCartsByUser(int userId)
+    public async Task<List<ResultCartDto>> GetCartsByUserAsync()
     {
         var response = await _client.GetAsync($"cart");
         if (!response.IsSuccessStatusCode)

@@ -1,0 +1,178 @@
+﻿@page "/admin/orders"
+@layout AdminLayout
+@attribute [Authorize(Roles = "ADMIN")]
+@rendermode InteractiveServer
+@implements IDisposable
+@inject OrderStateService _orderStateService
+@inject IUnitOfWork _unitOfWork
+
+
+<PageTitle>Orders </PageTitle>
+
+@if (_orders == null || _orders.Count==0)
+{
+    <div class="alert alert-light rounded-3 shadow-2" role="alert">
+        <h4 class="text-center">
+            <i class="fas fa-circle-check"></i>
+            There is no order Yet !
+        </h4>
+    </div>
+}
+else
+{
+    <div class="container mx-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="entete">
+                <h4 class="title"><i class="fas fa-list me-2"></i>List of Orders</h4>
+            </div>
+        </div>
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger" role="alert">
+                <i class="fas fa-triangle-exclamation"></i>
+                @errorMessage
+            </div>
+        }
+
+        @if (!String.IsNullOrEmpty(_orderStateService.SuccessMessage))
+        {
+            <div class="alert alert-info" role="alert">
+                <i class="fas fa-circle-check"></i>
+                @_orderStateService.SuccessMessage
+            </div>
+        }
+        <div class="container margin-auto mb-3 table-responsive tableau">
+            <table class="table table-hover table-striped table-sm ">
+                <thead class="rounded-3 table-header">
+                    <tr>
+                        <th>N°</th>
+                        <th>Product Name</th>
+                        <th>Total Price</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
+                        <th class="text-center">Operations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        count = 0;
+                    }
+                    @foreach (var order in _orders)
+                    {
+                        count++;
+                        <tr class="text-nowrap">
+                            <td>@count</td>
+                            <td>@order.cart?.product?.Name</td>
+                            <td>@((order.cart.quantity/50)* order.cart.product.Price) </td>
+                            <td>@order.cart.createdAt </td>
+                            <td>
+                                @(order.delivered)?<span class="btn btn-info text-light">Delivered</span>: <span class="btn btn-warning text-light">Not Delivered Yet</span>
+                            </td>
+                            <td>
+                                <div class="btn btn-group">
+                                    <button class="btn btn-danger" @onclick="() => Delete(order.id,count)">
+                                        <i class="fa fa-trash me-1"></i>
+                                        Delete
+                                    </button>
+                                    <button class="btn btn-success" @onclick="()=> UpdateOrder(order.id,count)">
+                                        <i class="fa fa-edit me-1"></i>
+                                        Update
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@code {
+    private List<ResultOrderDto> _orders { get; set; } = [];
+    private string? errorMessage { get; set; } = string.Empty;
+    private UpdateOrderDto updateOrder = new();
+    private int count { get; set; }
+    private IJSRuntime JS { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        if (!_orderStateService.Orders.Any())
+        {
+            await GetAllOrdersAsync();
+            _orderStateService.SetOrders(_orders);
+
+        }
+        else
+        {
+            _orders = _orderStateService.Orders;
+        }
+        _orderStateService.OnOrderChanged += StateHasChanged;
+    }
+    protected override void OnParametersSet()
+    {
+        if (_orderStateService.Orders != null && _orderStateService.Orders.Count > 0)
+        {
+            count = 0;
+            _orders = _orderStateService.Orders;
+        }
+    }
+    public void Dispose()
+    {
+        _orderStateService.OnOrderChanged -= StateHasChanged;
+    }
+
+    private async Task GetAllOrdersAsync()
+    {
+        _orders = await _unitOfWork
+                        .OrderService
+                        .GetAllOrderAsync();
+    }
+    private async Task Delete(int id, int cacheIndex)
+    {
+        try
+        {
+            await _unitOfWork
+                    .IngredientService
+                    .DeleteIngredientAsync(id);
+            _orderStateService.RemoveOrder(cacheIndex);
+            _orders = _orderStateService.Orders;
+        }
+        catch (Exception ex)
+        {
+            await JS.InvokeVoidAsync("console.log", ex);
+            errorMessage = "Failed to deleted this item";
+            await Task.Run(async () =>
+            {
+                await Task.Delay(1000);
+                errorMessage = string.Empty;
+                StateHasChanged();
+            });
+        }
+    }
+    public async Task UpdateOrder(int id, int cacheIndex)
+    {
+        updateOrder.status = true;
+        updateOrder.order_id=id;
+        var result = await _unitOfWork.OrderService.UpdateOrderAsync(updateOrder);
+        if (!result)
+        {
+            errorMessage = "An occured while trying to update this order";
+            StateHasChanged();
+            await Task.Run(async () =>
+            {
+                await Task.Delay(1000);
+                errorMessage = string.Empty;
+                StateHasChanged();
+                return;
+            });
+        }
+
+        var updatedOrder = await _unitOfWork.OrderService.GetOrderByIdAsync(id);
+        _orderStateService.UpdateOrder(updatedOrder);
+        _orders = _orderStateService.Orders;
+        StateHasChanged();
+    }
+
+
+
+}

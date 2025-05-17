@@ -1,0 +1,76 @@
+﻿@page "/admin/dashboard"
+@layout AdminLayout
+@rendermode InteractiveServer
+@inject IUnitOfWork _unitOfWork
+
+
+<PageTitle> Dashboard </PageTitle>
+
+<div class="title-dashboard">
+    <h4 class="text-center" style="position:relative; top:25%;"> <i class="fas fa-tachometer-alt"></i> Dashboard </h4>
+</div>
+
+<div class="container m-2 mt-4">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+            <div class="card carte personal bg-info">
+                <div class="card-body ">
+                    <h4 class="text-center">
+                        <span class="fs-4 text-light text-nowrap"> Total Personal </span>
+                    </h4>
+                    <br />
+                    <h4 class="text-center text-nowrap">
+                        <span class="fs-4 fw-bolder text-warning"><i class="fas fa-users me-2"></i> @personalCount </span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+            <div class="card carte order bg-warning">
+                <div class="card-body">
+                    <h4 class="text-center text-nowrap">
+                        <span class="fs-4  text-primary"> Total Order </span>
+
+                    </h4>
+                    <br />
+                    <h4 class="text-center text-nowrap">
+                        <span class="fs-4 fw-bolder text-center text-light" ><i class="fas fa-box-open me-2"></i> @orderCount </span> 
+
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+            <div class="card carte ">
+                <div class="card-body">
+                    <h4 class="text-center">
+                        <span class="fs-4 text-center text-primary"> Personal Count </span>                    </h4>
+                    <br />
+                    <h4 class="text-center">
+                        <span class="fs-4 fw-bolder text-center text-warning" ><i class="fas fa-users"></i> @personalCount </span> 
+
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+@code {
+    private int personalCount;
+    private int orderCount;
+    protected override async Task OnInitializedAsync()
+    {
+        personalCount = (await _unitOfWork.PersonalService.GetAllPersonalAsync()).Count;
+        orderCount = (await _unitOfWork.OrderService.GetAllOrderAsync()).Count;
+
+    }
+
+
+}

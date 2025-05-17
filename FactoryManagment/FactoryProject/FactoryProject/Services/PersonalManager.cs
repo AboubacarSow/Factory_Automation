@@ -41,8 +41,11 @@ public class PersonalManager : IPersonalService
         return personals.FirstOrDefault(per => per.id == personalId)!;
     }
 
-    public Task<bool> UpdatePersonalAsync(UpdatePersonalDto updatePersonalDto)
+    public async Task<bool> UpdatePersonalAsync(UpdatePersonalDto updatePersonalDto)
     {
-        throw new NotImplementedException();
+        var jsonData = JsonConvert.SerializeObject(updatePersonalDto);
+        var payload = new StringContent(jsonData, Encoding.UTF8, "application/json");
+        var response = await _client.PostAsync("personal/add", payload);
+        return response.IsSuccessStatusCode;
     }
 }

@@ -1,16 +1,14 @@
 @page "/admin/editcategory/{categoryId:int}"
 @layout AdminLayout
 @inject IUnitOfWork _unitOfWork
-@inject GenericStateService<ResultCategoryDto> _categoryStateService
+@inject CategoryStateService _categoryStateService
 @inject NavigationManager _navigationManager
+@rendermode InteractiveServer
 
 <PageTitle>Update Category</PageTitle>
-<HeadContent>
-    <link href="/css/update.css" rel="stylesheet" />
-</HeadContent>
 
 <div class="form-container mx-3">
-     <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Category</h4>
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Updating Category</h4>
     <hr class="mb-4" />
     @if (!string.IsNullOrEmpty(errorMessage))
     {
@@ -19,29 +17,29 @@
             @errorMessage
         </div>
     }
-    <EditForm FormName="UpdateForm" Model="@category" OnValidSubmit="@UpdateCategoryAsync" Enhance >
+    <EditForm FormName="UpdateForm" Model="category" OnValidSubmit="@UpdateCategoryAsync" Enhance >
         <DataAnnotationsValidator />
-        <input type="hidden" @bind-value="category.id"/>
+        <input type="hidden" @bind="category.id"/>
         <div class="mb-3 form-div">
-            <label for="categoryName" class="form-label">Cateogory Name</label>
+            <label for="categoryName" class="form-label">Category Name</label>
             <InputText type="text" class="@GetInputClass(nameof(category.name))" 
             id="categoryName" placeholder="Enter Category Name" @bind-Value="category.name"/>
             <ValidationMessage For="@(() => category.name)" class="text-danger" />
         </div>
-         <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary">
                 <i class="fas fa-edit"></i>
                 Update
             </button>
             <a href="/admin/categories" class="btn btn-secondary ms-2">
-            <i class="fas fa-list"></i>
+                <i class="fas fa-list"></i>
                 Categories
             </a>
-         </div>
+        </div>
     </EditForm>
-    
+
 </div>
-    
+
 @code{
     private string errorMessage{get;set;}=string.Empty;
     [SupplyParameterFromForm(FormName ="UpdateForm")]
@@ -52,12 +50,18 @@
     protected override async Task OnInitializedAsync()
     {
         await GetCategoryAsync();
+
     } 
     private async Task GetCategoryAsync()
     {
-         var dto=await _unitOfWork.CategoryService.GetCategoryByIdAsync(categoryId);
-        category.name=dto.Name;
-        category.id=dto.Id;
+        var dto=await _unitOfWork.CategoryService.GetCategoryByIdAsync(categoryId);
+        if (dto == null)
+        {
+            errorMessage = "Category is not found";
+            return;
+        }
+        category.name=dto.name;
+        category.id=dto.id;
     }
     private string GetInputClass(string fieldName)
     {
@@ -69,15 +73,16 @@
     }
     private async Task UpdateCategoryAsync()
     {
-        var response=await _unitOfWork.CategoryService.UpdateCategoryAsync(category);
-        if(!response){
-            errorMessage="An error occured when trying to create this item";
+        var response = await _unitOfWork.CategoryService.UpdateCategoryAsync(category);
+        if(!response.IsSuccessStatusCode){
+            errorMessage = "An error occured while trying to update this items";
             StateHasChanged();
             return;
         }
-        _categoryStateService.UpdateItem(new ResultCategoryDto{
-            Name=category.name
-        },categoryId);
-        _navigationManager.NavigateTo("/admin/categories");
+        _categoryStateService.UpdateCategory(new ResultCategoryDto{
+            id=category.id,
+            name=category.name
+        });
+        _navigationManager.NavigateTo("/admin/categories"); 
     }
 }

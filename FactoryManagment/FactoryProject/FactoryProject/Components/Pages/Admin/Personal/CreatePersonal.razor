@@ -1,18 +1,17 @@
 ﻿@page "/admin/createpersonal"
-@using FactoryProject.Models.PersonalDtos
+@using FactoryProject.Infrastructure.Utilities.Services
+
 @layout AdminLayout
 @inject IUnitOfWork _unitOfWork
-@inject GenericStateService<ResultPersonalDto> _personalStateService
+@inject PersonalStateService _personalStateService
 @inject NavigationManager _navigationManager
 <!-- Header Content Begin-->
 <PageTitle>Create Personal</PageTitle>
-<HeadContent>
-    <link href="/css/creating.css" rel="stylesheet" />
-</HeadContent>
+
 <!-- Header Content End-->
 
 <div class="form-container mx-3">
-    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Adding Category</h4>
+    <h4 class="title text-center"><i class="fas fa-plus me-2"></i>Adding Personal</h4>
     <hr class="mb-4" />
     @if (!string.IsNullOrEmpty(errorMessage))
     {
@@ -21,7 +20,8 @@
             @errorMessage
         </div>
     }
-    <EditForm FormName="CreateForm" Model="@personal" OnValidSubmit="@CreatePersonalAsync" Enhance>
+    <div class="mx-4">
+        <EditForm FormName="CreateForm" Model="@personal" OnValidSubmit="@CreatePersonalAsync" Enhance>
         <DataAnnotationsValidator />
 
         <div class="mb-3 form-div">
@@ -33,20 +33,55 @@
         <div class="mb-3 form-div">
             <label for="personalIdentifier" class="form-label">Identifier</label>
             <InputText type="text" class="@GetInputClass(nameof(personal.identifier))"
-             id="personalIdentifier" placeholder="Enter Personal Identifier" @bind-Value="personal.identifier" />
+            id="personalIdentifier" placeholder="Enter Personal Identifier" @bind-Value="personal.identifier" />
             <ValidationMessage For="@(() => personal.identifier)" class="text-danger" />
+        </div>  
+        <div class="mb-3 form-div">
+            <label for="personalAge" class="form-label">Age</label>
+            <InputNumber  class="@GetInputClass(nameof(personal.age))"
+            id="personalAge" placeholder="Enter Personal Age" @bind-Value="personal.age" />
+            <ValidationMessage For="@(() => personal.age)" class="text-danger" />
+        </div>
+        <div class="mb-3 form-div">
+            <label for="personalStartDate" class="form-label">Start Date</label>
+            <InputDate  class="@GetInputClass(nameof(personal.date))"
+            id="personalStartDate" placeholder="Enter Start Date" @bind-Value="personal.date" />
+            <ValidationMessage For="@(() => personal.date)" class="text-danger" />
         </div> 
         <div class="mb-3 form-div">
-            <label for="personalIdentifier" class="form-label">Gender</label>
-            <label>
-                <InputRadio type="text" class="@GetInputClass(nameof(personal.identifier))"
-                 id="personalIdentifier" placeholder="Enter Personal Identifier" @bind-Value="personal.identifier" />
-                <ValidationMessage For="@(() => personal.identifier)" class="text-danger" />
-
-            </label>
+            <label class="form-label">Gender</label>
+            <div class="d-flex justify-content-between">
+                <InputRadioGroup @bind-Value="personal.gender">
+                    <label>
+                        <InputRadio Value=1 class="form-check-input" /> Male
+                    </label>
+                    <label>
+                        <InputRadio Value=0 class="form-check-input" /> Female
+                    </label>
+                </InputRadioGroup>
+            </div>
         </div>
-
-
+        <div class="mb-3 form-div">
+            <label for="prod" class="form-label">Department</label>
+            <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.departmentId">
+                    <option value="">Choose</option>
+                @foreach (var department in _departments)
+                {
+                    <option value="@department.id">@department.name</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
+        </div> 
+        <div class="mb-3 form-div">
+            <label for="prod" class="form-label">Shift</label>
+            <InputSelect type="number" class="form-control " id="bookCategory" @bind-Value="personal.shift">
+                <option value="">Seçiniz</option>
+                <option value="@personal.shift">Morning</option>
+                <option value="@personal.shift">Evening</option>
+                <option value="@personal.shift">Night</option>
+            </InputSelect>
+            <ValidationMessage For="@(() => personal.departmentId)" class="text-danger" />
+        </div>
 
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary">
@@ -59,6 +94,7 @@
             </a>
         </div>
     </EditForm>
+    </div>
 
 </div>
 
@@ -66,7 +102,8 @@
 @code {
     private string? errorMessage{ get; set; }
     [SupplyParameterFromForm(FormName ="CreateForm")]
-    private CreatePersonalDto personal { get; set; } = new();
+    private PersonalForInsertionDto personal { get; set; } = new();
+    [CascadingParameter]
     private EditContext? editContext{ get; set; }
     private List<ResultDepartmentDto> _departments = [];
     protected async override Task OnInitializedAsync()
@@ -77,7 +114,38 @@
     }
     private async Task CreatePersonalAsync()
     {
-        
+        var departement = await _unitOfWork
+        .DepartmentService
+        .GetDepartmentByIdAsync(personal.departmentId);
+        var personel = new CreatePersonalDto
+        {
+            name=personal.name,
+            department=departement,
+            age=personal.age,
+            gender=personal.gender,
+            date=personal.date,
+            identifier=personal.identifier,
+            shift=personal.shift
+        };
+        var result = await _unitOfWork
+                                .PersonalService
+                                .CreatePersonalAsync(personel);
+        if (!result)
+        {
+            errorMessage = "An occured when trying to add this item";
+            StateHasChanged();
+        }
+        _personalStateService.AddPersonal(new ResultPersonalDto
+        {
+           name = personal.name,
+           department = departement,
+           age = personal.age,
+           gender = personal.gender,
+           date = personal.date,
+           identifier = personal.identifier,
+           shift = personal.shift,
+        });
+        _navigationManager.NavigateTo("admin/personals");
     }
     private string GetInputClass(string fieldName)
     {

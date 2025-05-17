@@ -1,15 +1,13 @@
 @page "/admin/createcategory"
 @layout AdminLayout
 @inject IUnitOfWork _unitOfWork
-@inject GenericStateService<ResultCategoryDto> _categoryStateService
+@inject CategoryStateService _categoryStateService
 @inject NavigationManager _navigationManager
 
 <!-- Header Content  Begin-->
 <PageTitle>Create Category</PageTitle>
 
-<HeadContent>
-    <link href="/css/creating.css" rel="stylesheet" />
-</HeadContent>
+
 
 <!-- Header Content  Begin-->
 <div class="form-container mx-3">
@@ -25,7 +23,7 @@
     <EditForm FormName="CreateForm" Model="@category" OnValidSubmit="@CreateCategoryAsync" Enhance >
         <DataAnnotationsValidator />
         <div class="mb-3 form-div">
-            <label for="categoryName" class="form-label">Cateogory Name</label>
+            <label for="categoryName" class="form-label">Category Name</label>
             <InputText type="text" class="@GetInputClass(nameof(category.name))" 
             id="categoryName" placeholder="Enter Category Name" @bind-Value="category.name"/>
             <ValidationMessage For="@(() => category.name)" class="text-danger" />
@@ -66,8 +64,8 @@
             StateHasChanged();
             return;
         }
-        _categoryStateService.AddItem(new ResultCategoryDto{
-            Name=category.name
+        _categoryStateService.AddCategory(new ResultCategoryDto{
+            name=category.name
         });
         _navigationManager.NavigateTo("/admin/categories");
     }

@@ -1,4 +1,5 @@
 using FactoryProject.Contracts;
+using FactoryProject.Infrastructure.Utilities.Services;
 using FactoryProject.Services;
 
 namespace FactoryProject.DependencyInjection;
@@ -18,5 +19,11 @@ public static class DIContaier
         services.AddScoped<IDepartmentService, DepartmentManager>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped(typeof(GenericStateService<>));
+        services.AddScoped<ProductStateService>();
+        services.AddScoped<PersonalStateService>();
+        services.AddScoped<CategoryStateService>();
+        services.AddScoped<OrderStateService>();
+        services.AddScoped<IngredientStateService>();
+        services.AddScoped<DepartmentStateService>();
     }
 }

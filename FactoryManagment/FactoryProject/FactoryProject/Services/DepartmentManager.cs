@@ -18,19 +18,19 @@ public class DepartmentManager : IDepartmentService
     {
         var jsonData = JsonConvert.SerializeObject(createDepartmentDto);
         var payload = new StringContent(jsonData, Encoding.UTF8, "application/json");
-        var response = await _client.PostAsync("personal/add", content: payload);
+        var response = await _client.PostAsync("department/add", content: payload);
         return response.IsSuccessStatusCode;
     }
 
     public async Task<bool> DeleteDeprtmentAsync(int id)
     {
-        var response = await _client.DeleteAsync($"personal/delete/{id}");
+        var response = await _client.DeleteAsync($"department/delete/{id}");
         return response.IsSuccessStatusCode;
     }
 
     public async Task<List<ResultDepartmentDto>> GetAllDepartmentAsync()
     {
-        var response = await _client.GetAsync("personal");
+        var response = await _client.GetAsync("department/get");
         if (!response.IsSuccessStatusCode)
             return [];
         var jsonData = await response.Content.ReadAsStringAsync();
@@ -48,7 +48,7 @@ public class DepartmentManager : IDepartmentService
     {
         var jsonData = JsonConvert.SerializeObject(updateDepartmentDto);
         var payload = new StringContent(jsonData, Encoding.UTF8, "application/json");
-        var response = await _client.PostAsync("personal/add", content: payload);
+        var response = await _client.PostAsync("department/update", content: payload);
         return response.IsSuccessStatusCode;
     }
 }

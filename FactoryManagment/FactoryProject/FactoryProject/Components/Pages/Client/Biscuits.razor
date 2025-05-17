@@ -16,7 +16,7 @@
     }else{
         @foreach (var product in _products)
         {
-            <div class="product-container">
+            <div class="product-container rounded-2">
                 <div class="product-img">
                     <img src="@product.ImageUrl" alt="Product Image" />
                 </div>
@@ -30,8 +30,8 @@
                     @product.Description
                 </div>
 
-                <button class="btn btn-danger" @onclick="() => AddToCart(product.Id)">
-                    <i class="fas fa-plus "></i> Add To Cart
+                <button class="btn btn-info text-light" @onclick="() => AddToCart(product.Id)">
+                    <i class="fas fa-shopping-cart me-2"></i> Add To Cart
                 </button>
             </div>  
         }
@@ -50,8 +50,6 @@
 
     private async Task AddToCart(int productId)
     {
-        createCartDto.quantity = 50;
-
         createCartDto.productId = productId;
         await unitOfWork.CartService.CreateCartAsync(createCartDto);
     }
