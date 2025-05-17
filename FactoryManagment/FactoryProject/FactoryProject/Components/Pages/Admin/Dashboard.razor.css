@@ -20,4 +20,21 @@
 .personal {
     background-color: #fcfcfc;
 }
+.table-header{
+    background-color: rgb(173, 62, 84);
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: floralwhite;
+    width: 100%;
+    border-radius: 5px;
+}
+.tableau{
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
 

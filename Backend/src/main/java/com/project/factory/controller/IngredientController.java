@@ -47,6 +47,7 @@ public class IngredientController
 
         return ResponseEntity.ok(addedIngredient);
     }
+
     @PutMapping("/update")
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<?> updateIngredient(@RequestBody Ingredient ingredient)
@@ -66,5 +67,4 @@ public class IngredientController
         }
         return ResponseEntity.ok("Ingredient has been deleted Successfully");
     }
-
 }

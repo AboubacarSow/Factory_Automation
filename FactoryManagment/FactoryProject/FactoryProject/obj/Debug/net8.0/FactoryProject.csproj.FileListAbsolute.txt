@@ -93,4 +93,3 @@ C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\Factor
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Admin\Ingredient\UpdateIngredient.razor.rz.scp.css
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Admin\Order\ListOrder.razor.rz.scp.css
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\scopedcss\Components\Pages\Admin\Dashboard.razor.rz.scp.css
-C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

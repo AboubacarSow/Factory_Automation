@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\models\\orderdtos\\updateorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\models\\orderdtos\\updateorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\models\\orderdtos\\resultorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\models\\orderdtos\\resultorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\models\\orderdtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\models\\orderdtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\components\\pages\\admin\\personal\\createpersonal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\components\\pages\\admin\\personal\\createpersonal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\services\\personalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\services\\personalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\infrastructure\\utilities\\services\\genericstateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\infrastructure\\utilities\\services\\genericstateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\components\\pages\\admin\\personal\\createpersonal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|solutionrelative:factoryproject\\factoryproject\\components\\pages\\admin\\personal\\createpersonal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C42DD800-CBDB-4CE9-8A77-4902BD1804CB}|FactoryProject\\FactoryProject\\FactoryProject.csproj|c:\\users\\aboubacar\\source\\repos\\factory_database_project\\factorymanagment\\factoryproject\\factoryproject\\components\\pages\\admin\\category\\categorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -154,19 +170,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:1613416671:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:254354193:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "UpdateOrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\OrderDtos\\UpdateOrderDto.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\OrderDtos\\UpdateOrderDto.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\OrderDtos\\UpdateOrderDto.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\OrderDtos\\UpdateOrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:57:39.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateOrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\OrderDtos\\CreateOrderDto.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\OrderDtos\\CreateOrderDto.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\OrderDtos\\CreateOrderDto.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\OrderDtos\\CreateOrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:57:16.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Program.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Program.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Program.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T09:50:49.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResultOrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\OrderDtos\\ResultOrderDto.cs",
+              "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\OrderDtos\\ResultOrderDto.cs",
+              "ToolTip": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\OrderDtos\\ResultOrderDto.cs",
+              "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\OrderDtos\\ResultOrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T09:39:02.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CategoryList.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\CategoryList.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\CategoryList.razor",
@@ -174,12 +238,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\CategoryList.razor",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T02:45:37.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:45:37.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CreatePersonal.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\CreatePersonal.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\CreatePersonal.razor",
@@ -192,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "PersonalManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\PersonalManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\PersonalManager.cs",
@@ -200,12 +263,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\PersonalManager.cs",
               "ViewState": "AgIAACEAAAAAAAAAAIAwwCwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T04:00:27.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:00:27.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "GenericStateService.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\Services\\GenericStateService.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\Services\\GenericStateService.cs",
@@ -213,12 +275,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Infrastructure\\Utilities\\Services\\GenericStateService.cs",
               "ViewState": "AgIAAN8AAAAAAAAAAIAwwO0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:19:54.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:19:54.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "UpdatePersonal.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\UpdatePersonal.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\UpdatePersonal.razor",
@@ -226,12 +287,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\UpdatePersonal.razor",
               "ViewState": "AgIAAIwAAAAAAAAAAAAMwJ4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T02:52:08.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:52:08.115Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "CreateCategory.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\CreateCategory.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\CreateCategory.razor",
@@ -239,12 +299,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\CreateCategory.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T03:18:11.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:18:11.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "DepartmentList.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\DepartmentList.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\DepartmentList.razor",
@@ -252,12 +311,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\DepartmentList.razor",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T04:22:01.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:22:01.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "IngredientList.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\IngredientList.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\IngredientList.razor",
@@ -265,12 +323,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\IngredientList.razor",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T04:22:14.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:22:14.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "PersonalList.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\PersonalList.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\PersonalList.razor",
@@ -278,12 +335,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Personal\\PersonalList.razor",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T04:22:32.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:22:32.529Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "ProductsList.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\ProductsList.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\ProductsList.razor",
@@ -291,12 +347,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\ProductsList.razor",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T03:17:02.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:17:02.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "UpdateProduct.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\UpdateProduct.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\UpdateProduct.razor",
@@ -304,12 +359,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\UpdateProduct.razor",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T02:47:08.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:47:08.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ListOrder.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Order\\ListOrder.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Order\\ListOrder.razor",
@@ -317,12 +371,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Order\\ListOrder.razor",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T04:22:23.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:22:23.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Dashboard.razor.css",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Dashboard.razor.css",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Dashboard.razor.css",
@@ -330,12 +383,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Dashboard.razor.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-17T04:23:02.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:23:02.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "CreateProduct.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\CreateProduct.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\CreateProduct.razor",
@@ -343,12 +395,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Products\\CreateProduct.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T02:44:00.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:44:00.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "UpdateIngredient.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\UpdateIngredient.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\UpdateIngredient.razor",
@@ -356,12 +407,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\UpdateIngredient.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T04:17:05.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:17:05.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "CreateIngredient.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\CreateIngredient.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\CreateIngredient.razor",
@@ -369,12 +419,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Ingredient\\CreateIngredient.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T04:22:10.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:22:10.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "UpdateDepartment.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\UpdateDepartment.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\UpdateDepartment.razor",
@@ -382,12 +431,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\UpdateDepartment.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T04:17:15.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:17:15.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "CreateDepartment.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\CreateDepartment.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\CreateDepartment.razor",
@@ -395,12 +443,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Department\\CreateDepartment.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T04:21:56.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:21:56.319Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "UpdateCategory.razor",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\UpdateCategory.razor",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\UpdateCategory.razor",
@@ -408,12 +455,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Components\\Pages\\Admin\\Category\\UpdateCategory.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T02:50:55.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:50:55.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "CategoryManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\CategoryManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\CategoryManager.cs",
@@ -421,12 +467,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\CategoryManager.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAASwA8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:21:52.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:21:52.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "DepartmentManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\DepartmentManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\DepartmentManager.cs",
@@ -434,12 +479,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\DepartmentManager.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAApwCwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T04:02:54.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:02:54.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "IngredientManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\IngredientManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\IngredientManager.cs",
@@ -447,12 +491,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\IngredientManager.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBkAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T04:04:53.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:04:53.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "OrderManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\OrderManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\OrderManager.cs",
@@ -460,12 +503,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\OrderManager.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T04:06:32.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:06:32.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "AccountManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\AccountManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\AccountManager.cs",
@@ -473,12 +515,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\AccountManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T04:11:55.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:11:55.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "ProductManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\ProductManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\ProductManager.cs",
@@ -486,12 +527,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\ProductManager.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAIAwwBoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:58:33.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:58:33.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "AuthenticationManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\AuthenticationManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\AuthenticationManager.cs",
@@ -499,12 +539,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\AuthenticationManager.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T04:11:43.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:11:43.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "CartManager.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Services\\CartManager.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Services\\CartManager.cs",
@@ -512,12 +551,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Services\\CartManager.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:59:51.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:59:51.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "ProductForInsertionDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForInsertionDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForInsertionDto.cs",
@@ -525,12 +563,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForInsertionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:11:11.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:11:11.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "UpdateCategoryDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\CategoryDtos\\UpdateCategoryDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\CategoryDtos\\UpdateCategoryDto.cs",
@@ -538,12 +575,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\CategoryDtos\\UpdateCategoryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:15:20.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:15:20.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "ResultCategoryDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\CategoryDtos\\ResultCategoryDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\CategoryDtos\\ResultCategoryDto.cs",
@@ -551,12 +587,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\CategoryDtos\\ResultCategoryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:15:10.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:15:10.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "CreateCategoryDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\CategoryDtos\\CreateCategoryDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\CategoryDtos\\CreateCategoryDto.cs",
@@ -564,12 +599,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\CategoryDtos\\CreateCategoryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:15:09.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:15:09.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "UpdateProductDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\ProductDtos\\UpdateProductDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\UpdateProductDto.cs",
@@ -577,12 +611,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\UpdateProductDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T02:48:55.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:48:55.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "ProductForInsertionWithIngredientDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForInsertionWithIngredientDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForInsertionWithIngredientDto.cs",
@@ -590,12 +623,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForInsertionWithIngredientDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:11:17.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:11:17.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "GetProductCategoryDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\ProductDtos\\GetProductCategoryDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\GetProductCategoryDto.cs",
@@ -603,12 +635,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\GetProductCategoryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:11:23.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:11:23.133Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "ResultProductDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\ProductDtos\\ResultProductDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\ResultProductDto.cs",
@@ -616,12 +647,11 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\ResultProductDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:11:33.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:11:33.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "ProductForEditDto.cs",
               "DocumentMoniker": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForEditDto.cs",
               "RelativeDocumentMoniker": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForEditDto.cs",
@@ -629,8 +659,17 @@
               "RelativeToolTip": "FactoryProject\\FactoryProject\\Models\\ProductDtos\\ProductForEditDto.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:10:52.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:10:52.787Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1243,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

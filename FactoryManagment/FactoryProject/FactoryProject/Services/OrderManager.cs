@@ -1,5 +1,6 @@
 using System.Text;
 using FactoryProject.Contracts;
+using FactoryProject.Models;
 using FactoryProject.Models.OrderDtos;
 using Newtonsoft.Json;
 
@@ -41,6 +42,23 @@ public class OrderManager: IOrderService
         if (!response.IsSuccessStatusCode) return [];
         var jsonData = await response.Content.ReadAsStringAsync();
         return JsonConvert.DeserializeObject<List<ResultOrderDto>>(jsonData)!;
+    }
+
+    public async Task<List<PendingOrderDto>> GetPendingOrdersAsync()
+    {
+        var response = await _client.GetAsync("order/getPendingOrders");
+        if (!response.IsSuccessStatusCode)
+            return [];
+        var jsonData = await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<List<PendingOrderDto>>(jsonData)!;
+    }
+
+    public async Task<List<TopProductDto>> GetTopProductsAsync()
+    {
+        var response = await _client.GetAsync("order/getTopProducts");
+        if (!response.IsSuccessStatusCode) return [];
+        var jsonData = await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<List<TopProductDto>>(jsonData)!;
     }
 
     public async Task<bool> UpdateOrderAsync(UpdateOrderDto updateorderdto)

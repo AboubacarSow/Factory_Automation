@@ -1,6 +1,7 @@
 using System.Text;
 using FactoryProject.Contracts;
 using FactoryProject.Infrastructure.Utilities;
+using FactoryProject.Models;
 using FactoryProject.Models.ProductDtos;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -41,7 +42,7 @@ public class ProductManager : IProductService
         if (!response.IsSuccessStatusCode)
             throw new Exception("An error occured while fetching data from api");
         if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
-            return null;
+            return [];
         var jsonData = await response.Content.ReadAsStringAsync();
         return JsonConvert.DeserializeObject<List<ResultProductDto>>(jsonData)!;
     }
@@ -67,4 +68,6 @@ public class ProductManager : IProductService
         var request = await _client.PostAsync("product/update",content);
         return request.IsSuccessStatusCode;
     }
+
+   
 }
