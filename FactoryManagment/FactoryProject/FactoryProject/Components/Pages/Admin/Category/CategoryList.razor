@@ -27,7 +27,7 @@
         @if (!string.IsNullOrEmpty(errorMessage))
         {
             <div class="alert alert-danger" role="alert">
-                <i class="fas fa-triangle-exclamation"></i>
+                <i class="fas fa-exclamation-triangle"></i>
                 @errorMessage
             </div>
         }
@@ -35,7 +35,7 @@
         @if(!String.IsNullOrEmpty(_categoryStateService.SuccessMessage))
         {
             <div class="alert alert-info" role="alert">
-                <i class="fas fa-circle-check"></i>
+                <i class="far fa-check-circle"></i>
                 @_categoryStateService.SuccessMessage
             </div>
         }

@@ -3,7 +3,7 @@
 @inject IUnitOfWork _unitOfWork
 @inject IngredientStateService _ingredientStateService
 @inject NavigationManager _navigationManager
-
+@rendermode InteractiveServer
 <!-- Header Content  Begin-->
 <PageTitle>Create Ingredient</PageTitle>
 <!-- Header Content  Begin-->
@@ -14,7 +14,7 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }

@@ -13,7 +13,7 @@
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger" role="alert">
-            <i class="fas fa-triangle-exclamation"></i>
+            <i class="fas fa-exclamation-triangle"></i>
             @errorMessage
         </div>
     }
@@ -27,7 +27,7 @@
             <ValidationMessage For="@(() => category.name)" class="text-danger" />
         </div>
         <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-success">
                 <i class="fas fa-edit"></i>
                 Update
             </button>

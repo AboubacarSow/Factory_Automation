@@ -28,14 +28,14 @@ else
         @if (!string.IsNullOrEmpty(errorMessage))
         {
             <div class="alert alert-danger" role="alert">
-                <i class="fas fa-triangle-exclamation"></i>
+                <i class="fas fa-exclamation-triangle"></i>
                 @errorMessage
             </div>
         }
         @if (!string.IsNullOrEmpty(_productStateService.SuccessMessage))
         {
             <div class="alert alert-success" role="alert">
-                <i class="fas fa-circle-check"></i>
+                <i class="far fa-check-circle"></i>
                 @_productStateService.SuccessMessage
             </div>
         }

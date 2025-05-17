@@ -45,7 +45,7 @@ public class PersonalManager : IPersonalService
     {
         var jsonData = JsonConvert.SerializeObject(updatePersonalDto);
         var payload = new StringContent(jsonData, Encoding.UTF8, "application/json");
-        var response = await _client.PostAsync("personal/add", payload);
+        var response = await _client.PostAsync("personal/update", payload);
         return response.IsSuccessStatusCode;
     }
 }
