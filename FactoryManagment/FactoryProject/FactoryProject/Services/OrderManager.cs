@@ -61,6 +61,14 @@ public class OrderManager: IOrderService
         return JsonConvert.DeserializeObject<List<TopProductDto>>(jsonData)!;
     }
 
+    public async Task<double> GetTotalRevenueAsync()
+    {
+        var response = await _client.GetAsync("order/revenue/delivered");
+        if(!response.IsSuccessStatusCode) return 0;
+        var jsonData= await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<double>(jsonData)!;
+    }
+
     public async Task<bool> UpdateOrderAsync(UpdateOrderDto updateorderdto)
     {
         var jsonData = JsonConvert.SerializeObject(updateorderdto);

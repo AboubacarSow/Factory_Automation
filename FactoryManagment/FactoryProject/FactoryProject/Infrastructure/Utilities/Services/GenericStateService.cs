@@ -394,12 +394,15 @@ public class OrderStateService
         var msg = $"Order with ID {id} is successfully deleted.";
         OnOrderChanged?.Invoke();
     }
-    public void UpdateOrder(ResultOrderDto order)
+    public void UpdateOrder(UpdateOrderDto order)
     {
-        var index = _orders.FindIndex(b => b.id == order.id);
+        var _order=_orders.FirstOrDefault(o=>o.id==order.order_id);
+        _order.deliveryDate=order.delivery_date;
+        _order.delivered=order.status;
+        var index = _orders.FindIndex(b => b.id == _order.id);
         if (index != -1)
         {
-            _orders[index] = order;
+            _orders[index] = _order;
             OnOrderChanged?.Invoke();
         }
     }

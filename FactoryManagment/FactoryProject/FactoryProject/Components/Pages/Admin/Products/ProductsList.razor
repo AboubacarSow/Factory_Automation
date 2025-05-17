@@ -40,15 +40,7 @@ else
             </div>
         }
 
-        <div class="d-flex margin-auto justify-content-between">
-            <div class="input-group mb-3 w-50">
-                <input type="text" class="form-control" placeholder="Search something..." aria-label="Search something..."
-                aria-describedby="button-addon2">
-                <button class="btn btn-outline-primary" type="button" id="button-addon2">
-                    <i class="fas fa-search"></i>
-                    Search
-                </button>
-            </div>
+        <div class="d-flex margin-auto justify-content-center">
             <div>
                 <EditForm Model="getProductCategoryById" OnValidSubmit="GetProductsByCategoryId" Enhance FormName="FilteringForm">
                     <div class="input-group mb-3 ms-2">
@@ -74,7 +66,7 @@ else
                         <th>N°</th>
                         <th>Image</th>
                         <th>Name</th>
-                        <th>Description</th>
+                        <th>Details</th>
                         <th>Price</th>
                         <th>Stock</th>
                         <th>Operations</th>
@@ -94,12 +86,9 @@ else
                             </td>
                             <td>@product.Name</td>
                             <td>
-                                <button type="button" class="btn btn-info text-light" data-bs-toggle="modal" 
-                                data-bs-target="#modal_@product.Id">
-                                    Description
-                                </button>
+                               <a href="/admin/products/@product.Id" class="btn btn-outline-warning"> Details</a>
                             </td>
-                            <td>@product.Price</td>
+                            <td>@product.Price ₺</td>
                             <td>@product.Stock</td>
                             <td>
                                 <div class="btn btn-group">
@@ -118,30 +107,8 @@ else
         </div>
     </div>
 
-    @foreach(var item in _products)
-    {
-        <div class="modal fade" id="modal_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="d-flex">
-                            <img class="@item.ImageUrl" style="width: 20px; height:20px; border-radius: 50%;" />
-                            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">@item.Name</h1>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <b>Category: <span class="text-primary">@item.Category?.name</span></b>
-                        <br>
-                        <p >@item.Description</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    }
+   
+    
 }
 
 @code {
@@ -187,7 +154,12 @@ else
     {
         try
         {
-            await _unitOfWork.ProductService.DeleteProductAsync(id);
+            var result=await _unitOfWork.ProductService.DeleteProductAsync(id);
+            if(!result)
+            {
+                errorMessage="An error occured while trying to delete this item";
+                return;
+            }
             _productStateService.RemoveProduct(cacheIndex);
             _products = _productStateService.Products;
         }catch(Exception ex)
@@ -207,7 +179,6 @@ else
     {
         _productStateService.OnProductsChanged -= StateHasChanged;
     }
-
     private async Task GetProductsByCategoryId()
     {
         _products= await _unitOfWork

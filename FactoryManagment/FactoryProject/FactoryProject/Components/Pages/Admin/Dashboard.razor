@@ -26,7 +26,19 @@
                 </div>
             </div>
         </div>
-        
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+            <div class="card carte ">
+                <div class="card-body">
+                    <h4 class="text-center">
+                        <span class="fs-4 text-center text-info"> Total Revenue </span>  
+                    </h4>
+                    <br />
+                    <h4 class="text-center">
+                        <span class="fs-4 fw-bolder text-center text-warning"><i class="fas fa-money-check-alt"></i> @revenue ₺ </span>
+                    </h4>
+                </div>
+            </div>
+        </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
             <div class="card carte order bg-warning">
                 <div class="card-body">
@@ -38,19 +50,6 @@
                     <h4 class="text-center text-nowrap">
                         <span class="fs-4 fw-bolder text-center text-light" ><i class="fas fa-box-open me-2"></i> @orderCount </span> 
 
-                    </h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
-            <div class="card carte ">
-                <div class="card-body">
-                    <h4 class="text-center">
-                        <span class="fs-4 text-center text-primary"> Total Revenue </span>  
-                    </h4>
-                    <br />
-                    <h4 class="text-center">
-                        <span class="fs-4 fw-bolder text-center text-warning" ><i class="fas fa-users"></i> @personalCount </span> 
                     </h4>
                 </div>
             </div>
@@ -88,14 +87,14 @@
                                 <th>@count_pending</th>
                                 <td>@order.username</td>
                                 <td>
-                                     @if(order.delivered)
+                                    @if(order.delivered)
                                     {
                                         <span class="badge rounded-pill text-bg-info text-light">Delivered</span>
                                     }
                                     else{
                                         <span class="badge rounded-pill text-bg-warning text-light">Pending...</span>
                                     }
-                                 </td>
+                                </td>
                                 <td>@order.orderDate.ToString()</td>
                             </tr>
                         }
@@ -103,11 +102,11 @@
                 </table>
             </div>
         </div>
-        
+
         <div class="col-lg-6 col-sm-12 mt-lg-5 mt-sm-3">
             <h4 class="text-center mb-2">
-                 <button type="button" class="btn btn-info fw-bolder text-light position-relative">
-                     Most Ordered Products
+                <button type="button" class="btn btn-info fw-bolder text-light position-relative">
+                    Most Ordered Products
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         @_topProducts.Count
                     </span>
@@ -134,15 +133,15 @@
                                 <td>@top.name</td>
                                 <td>
                                     @top.orderCount
-                                 </td>
+                                </td>
                             </tr>
                         }
                     </tbody>
                 </table>
             </div>
         </div>
-        
-       
+
+
 
     </div>
 </div>
@@ -158,12 +157,14 @@
     private int count_pending;
     private List<TopProductDto> _topProducts=[];
     private int count_topProducts;
+    private double revenue;
     protected override async Task OnInitializedAsync()
     {
         personalCount = (await _unitOfWork.PersonalService.GetAllPersonalAsync()).Count;
         orderCount = (await _unitOfWork.OrderService.GetAllOrderAsync()).Count;
         _pendingOrders=await _unitOfWork.OrderService.GetPendingOrdersAsync();
         _topProducts=await _unitOfWork.OrderService.GetTopProductsAsync();
+        revenue = await _unitOfWork.OrderService.GetTotalRevenueAsync();
     }
 
 

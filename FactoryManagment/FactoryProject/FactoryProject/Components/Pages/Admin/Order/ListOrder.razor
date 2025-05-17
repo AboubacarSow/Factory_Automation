@@ -11,11 +11,11 @@
 
 @if (_orders == null || _orders.Count==0)
 {
-    <div class="alert alert-light rounded-3 shadow-2" role="alert">
-        <h4 class="text-center">
-            <i class="fas fa-circle-check"></i>
+    <div class="alert alert-info rounded-4 shadow-2" role="alert" style="border:none;border-radius:30px;">
+        <p class="text-center fs-3">
+            <i class="fas fa-exclamation-triangle"></i>
             There is no order Yet !
-        </h4>
+        </p>
     </div>
 }
 else
@@ -80,10 +80,10 @@ else
                                         <i class="fa fa-trash me-1"></i>
                                         Delete
                                     </button>
-                                    <button class="btn btn-success" @onclick="()=> UpdateOrder(order.id,count)">
+                                    <a class="btn btn-success" href="/admin/editorder/@order.id">
                                         <i class="fa fa-edit me-1"></i>
                                         Update
-                                    </button>
+                                    </a>
                                 </div>
                             </td>
                         </tr>
@@ -155,29 +155,7 @@ else
             });
         }
     }
-    public async Task UpdateOrder(int id, int cacheIndex)
-    {
-        updateOrder.status = true;
-        updateOrder.order_id=id;
-        var result = await _unitOfWork.OrderService.UpdateOrderAsync(updateOrder);
-        if (!result)
-        {
-            errorMessage = "An occured while trying to update this order";
-            StateHasChanged();
-            await Task.Run(async () =>
-            {
-                await Task.Delay(1000);
-                errorMessage = string.Empty;
-                StateHasChanged();
-                return;
-            });
-        }
-
-        var updatedOrder = await _unitOfWork.OrderService.GetOrderByIdAsync(id);
-        _orderStateService.UpdateOrder(updatedOrder);
-        _orders = _orderStateService.Orders;
-        StateHasChanged();
-    }
+  
 
 
 

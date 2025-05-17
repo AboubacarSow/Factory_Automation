@@ -1112,6 +1112,52 @@ main[b-tgn1r5xgxa] {
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* _content/FactoryProject/Components/Pages/Admin/Order/UpdateOrder.razor.rz.scp.css */
+/* CreateBook.razor.css */
+/* This CSS file styles the CreateBook component in a Blazor application. */
+.title[b-71sm57fzjo] {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(173, 62, 84);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container[b-71sm57fzjo] {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div[b-71sm57fzjo] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input[b-71sm57fzjo] {
+    margin-bottom: 15px;
+    border-radius: 6.5px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    transition: border-color 0.3s;
+    display: block;
+}
+
+    .form-input.invalid[b-71sm57fzjo] {
+        border: 1px solid #dc3545;
+    }
+
+    .form-input:focus[b-71sm57fzjo] {
+        border-color: #b2d3f7;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgba(2, 3, 3, 0.25);
+    }
 /* _content/FactoryProject/Components/Pages/Admin/Personal/CreatePersonal.razor.rz.scp.css */
 /* CreateBook.razor.css */
 /* This CSS file styles the CreateBook component in a Blazor application. */
@@ -1310,6 +1356,25 @@ main[b-tgn1r5xgxa] {
 }
 
    
+/* _content/FactoryProject/Components/Pages/Admin/Products/ProductDetails.razor.rz.scp.css */
+.content[b-tkcclhx8z5]{
+    width: 600px;
+    margin: auto 0;
+    position: relative;
+    left: 25%;
+    padding: 20px;
+}
+.title[b-tkcclhx8z5]{
+     color:  rgb(173, 62, 84);
+}
+
+
+.product_detail[b-tkcclhx8z5]{
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px 5px rgba(rgb(205, 142, 142), rgb(54, 114, 54), blue, 0.7);
+    border-radius: 20px;
+    border: none;
+}
 /* _content/FactoryProject/Components/Pages/Admin/Products/ProductsList.razor.rz.scp.css */
 @font-face {
     font-family: 'button-icons';

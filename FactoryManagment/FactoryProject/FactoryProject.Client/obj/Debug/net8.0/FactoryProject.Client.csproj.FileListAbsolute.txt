@@ -1031,6 +1031,7 @@ C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\Factor
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\refint\FactoryProject.Client.dll
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\FactoryProject.Client.pdb
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\ref\FactoryProject.Client.dll
-C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\jaz2iyvndq-cxf80mcp9r.gz
-C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\xtu4h4j0j4-7qi9u426s1.gz
-C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\6q3l2yq0tl-1o3tud27dw.gz
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\jaz2iyvndq-tzeievl7ir.gz
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\xtu4h4j0j4-v84201y3ng.gz
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\6q3l2yq0tl-79v7b1xap8.gz
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

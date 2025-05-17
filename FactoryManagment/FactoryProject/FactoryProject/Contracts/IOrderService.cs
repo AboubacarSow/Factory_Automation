@@ -12,4 +12,5 @@ public interface IOrderService
     Task<List<ResultOrderDto>> GetOrdersByUserAsync();
     Task<List<PendingOrderDto>> GetPendingOrdersAsync();
     Task<List<TopProductDto>> GetTopProductsAsync();
+    Task<double> GetTotalRevenueAsync();
 }

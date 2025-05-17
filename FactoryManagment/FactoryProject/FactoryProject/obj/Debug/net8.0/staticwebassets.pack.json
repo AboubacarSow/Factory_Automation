@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FactoryProject.vu71w3zruc.bundle.scp.css"
+      "PackagePath": "staticwebassets\\FactoryProject.w16hobd29o.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\app.css",
@@ -71,6 +71,10 @@
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\icons\\user.png",
       "PackagePath": "staticwebassets\\icons\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\src\\accessdmedia.jpg",
