@@ -1,0 +1,74 @@
+Create table general_log(
+	log_id int ,
+    message varchar(100),
+    createdAt datetime
+);
+Create table cart_logs(
+	log_id int,
+    message varchar(100),
+    createdAt datetime,
+    user_id int,
+    product_id int,
+    cart_id int 
+);
+Create trigger setlog_cart_added after insert on cart
+for each row
+insert into cart_logs(message,user_id,createdAt,product_id,cart_id) 
+values("New cart is added successfully",new.user_id,current_date(),New.product_id,New.id);
+
+Create trigger setlog_cart_deleted after delete on cart
+for each row 
+insert into cart_logs(message,user_id,createdAt,product_id,cart_id)
+values("Product deleted from cart",old.user_id,current_date(),old.product_id,old.id);
+
+Create trigger set_log_general after insert on product for each row 
+insert into general_log(message, createdAt) values("New product is added",current_date());
+
+Create trigger set_log_general after delete on product for each row 
+insert into general_log(message, createdAt) values("A product is deleted",current_date());
+
+Create trigger set_log_general after insert on category for each row 
+insert into general_log(message, createdAt) values("New category is added",current_date());
+
+Create trigger set_log_general after insert on personal for each row 
+insert into general_log(message, createdAt) values("New personal is added",current_date());
+
+Create trigger set_log_general after delete on personal for each row 
+insert into general_log(message, createdAt) values("New personal is removed",current_date());
+
+
+Create view product_cholates_category as select * from factory.product where product.category_id=1;
+
+Create view personel_production as select * from factory.personal where personal.department_id=1;
+
+
+Alter table ingredient drop column measurement;
+select * from ingredient;
+update ingredient set unit="mg" where id in (1,2,3,5,6,7,8,9,10,12,13,14);
+
+ select * from product;
+Create Trigger set_delivery_date before insert on orders for each row 
+set New.delivery_date=now() + interval 2 day;
+Drop trigger set_delivery_date;
+
+create index product_name_index on product(name);
+
+-- Selecting all the columns of factory.cart table
+SELECT * FROM factory.cart;
+-- Selecting all the cart based on user
+select * from factory.cart where user_id=4;
+-- selecting all the cart base on product and user
+Select * from factory.cart where product_id=3 and user_id=4;
+
+Insert into factory.cart(quantity,product_id,user_id) 
+values(45, 4,3);
+
+update factory.cart set quantity=67 
+where product_id=4 and user_id=3;
+
+update factory.cart set active=false where id=1;  
+
+SELECT * FROM factory.orders;
+
+insert into factory.orders(cart_id,order_date) values (2, current_date());
+select * from factory.orders where cart_id=2; 
