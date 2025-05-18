@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcR3Vtcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/SearchPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcU2VhcmNoUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ABOUBACAR/source/repos/Factory_Database_Project/FactoryManagment/FactoryProject/FactoryProject/Components/Pages/Client/Waffers.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRcV2FmZmVycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

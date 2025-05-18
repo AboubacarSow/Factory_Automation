@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FactoryManagment",
+    "\\FactoryManagment\\FactoryProject",
+    "\\FactoryManagment\\FactoryProject\\FactoryProject"
   ],
+  "SelectedNode": "\\FactoryManagment\\FactoryProject\\FactoryProject\\FactoryProject.sln",
   "PreviewInSolutionExplorer": false
 }
