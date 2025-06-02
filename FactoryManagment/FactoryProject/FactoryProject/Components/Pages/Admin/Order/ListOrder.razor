@@ -68,18 +68,14 @@ else
                             <td>
                                 @if(order.delivered)
                                 {
-                                    <span class="badge rounded-pill text-bg-info text-light">Delivered</span>
+                                    <span class="badge rounded-pill text-bg-info text-dark">Delivered</span>
                                 }
                                 else{
-                                    <span class="badge rounded-pill text-bg-warning text-light">Not Delivered Yet</span>
+                                    <span class="badge rounded-pill text-bg-warning text-dark">Not Delivered Yet</span>
                                 }
                             </td>
                             <td>
                                 <div class="btn btn-group">
-                                    <button class="btn btn-danger" @onclick="() => Delete(order.id,count)">
-                                        <i class="fa fa-trash me-1"></i>
-                                        Delete
-                                    </button>
                                     <a class="btn btn-success" href="/admin/editorder/@order.id">
                                         <i class="fa fa-edit me-1"></i>
                                         Update
@@ -133,28 +129,7 @@ else
                         .OrderService
                         .GetAllOrderAsync();
     }
-    private async Task Delete(int id, int cacheIndex)
-    {
-        try
-        {
-            await _unitOfWork
-                    .IngredientService
-                    .DeleteIngredientAsync(id);
-            _orderStateService.RemoveOrder(cacheIndex);
-            _orders = _orderStateService.Orders;
-        }
-        catch (Exception ex)
-        {
-            await JS.InvokeVoidAsync("console.log", ex);
-            errorMessage = "Failed to deleted this item";
-            await Task.Run(async () =>
-            {
-                await Task.Delay(1000);
-                errorMessage = string.Empty;
-                StateHasChanged();
-            });
-        }
-    }
+   
   
 
 

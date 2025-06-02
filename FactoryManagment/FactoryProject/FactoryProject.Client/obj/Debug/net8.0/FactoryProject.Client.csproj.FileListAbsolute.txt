@@ -1017,9 +1017,6 @@ C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\Factor
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\1e213k49st-tptq2av103.gz
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\nyokym6e6g-lfu7j35m59.gz
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\6ljd02vlsu-oyz0vx2fzb.gz
-C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\jaz2iyvndq-nh9ozbktba.gz
-C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\xtu4h4j0j4-tmsmg5gna9.gz
-C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\6q3l2yq0tl-51opy2bcrn.gz
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -1035,3 +1032,6 @@ C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\Factor
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\refint\FactoryProject.Client.dll
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\FactoryProject.Client.pdb
 C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\ref\FactoryProject.Client.dll
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\jaz2iyvndq-po8ctjj6cu.gz
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\xtu4h4j0j4-34hq2frc7i.gz
+C:\Users\ABOUBACAR\source\repos\Factory_Database_Project\FactoryManagment\FactoryProject\FactoryProject.Client\obj\Debug\net8.0\compressed\6q3l2yq0tl-kztvb43bhl.gz

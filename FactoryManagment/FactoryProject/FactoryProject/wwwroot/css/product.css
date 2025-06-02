@@ -70,8 +70,8 @@
     margin-left: 8px;
 }
 
-.heading {
-    text-align: center;
+.heading{
+    text-align:center;
     margin-left: 230px;
 }
 
@@ -83,11 +83,10 @@
     align-content: space-between;
     padding: 10px;
 }
-
 .message-container {
     display: flex;
     align-items: center;
-    margin: auto;
+    margin:auto;
 }
 
 .message {
@@ -118,7 +117,7 @@
 
 @media (max-width: 830px) {
     .main-container {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr; 
     }
 }
 
@@ -141,7 +140,7 @@
 
     .message {
         top: 110px;
-        left: 0;
+        left:0;
     }
 }
 
@@ -152,12 +151,12 @@
     }
 
     .heading {
-        margin-left: 0;
+        margin-left:0;
     }
 
     .message {
         top: 110px;
-        left: 0;
+        left:0;
     }
 }
 

@@ -1,196 +1,8 @@
-.main-container {
-    display: grid;
-    gap: 20px;
-    padding: 10px;
-    place-items: center;
-    margin-left: 230px;
-}
-
-
-.page-top {
-    display: flex;
-    min-width: 490px;
-    border-bottom: 1px solid grey;
-    height: 50px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(240, 240, 240);
-    font-size: small;
-    position: fixed;
-    padding: 10px;
-    gap: 15px;
-    z-index: 100;
-    left: 250px;
-    right: 0;
-    top: 0;
-}
-
-    .page-top img {
-        height: 25px;
-    }
-
-        .page-top img:hover {
-            background-color: lightblue;
-        }
-
-.search-bar {
-    display: flex;
-    flex: 1;
-    max-width: 450px;
-}
-
-    .search-bar button {
-        border: none;
-    }
-
-    .search-bar img {
-        height: 35px;
-        border: 1px solid darkblue;
-        margin-left: -7px;
-        margin-top: -1px;
-    }
-
-    .search-bar input {
-        height: 35px;
-        border: 1px solid darkblue;
-        width: 100%;
-        padding-left: 10px;
-        border-right: none;
-    }
-
-.order-icon {
-    margin-left: 4px;
-}
-
-.profile-icon, .admin-icon {
-    margin-left: 6px;
-}
-
-.logout-icon {
-    margin-left: 8px;
-}
-
-.heading {
-    text-align: center;
-    margin-left: 230px;
-}
-
-.product-container {
-    display: grid;
-    height: 430px;
-    width: 250px;
-    border: 1px solid darkblue;
-    align-content: space-between;
-    padding: 10px;
-}
-
-.message-container {
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-
-.message {
-    flex: 1;
-    position: fixed;
-    top: 60px;
-    left: 250px;
-    z-index: 300;
-}
-
-@media (max-width: 2000px) {
-    .main-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
-@media (max-width: 1400px) {
-    .main-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (max-width: 1100px) {
-    .main-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 830px) {
-    .main-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@media (max-width: 729.98px) {
-    .main-container {
-        grid-template-columns: 1fr 1fr;
-        margin-left: 0;
-    }
-
-    .page-top {
-        top: 55px;
-        right: 0;
-        left: 0;
-    }
-
-    .heading {
-        margin-left: 0;
-    }
-
-    .message {
-        top: 110px;
-        left: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    .main-container {
-        grid-template-columns: 1fr;
-        margin-left: 0;
-    }
-
-    .heading {
-        margin-left: 0;
-    }
-
-    .message {
-        top: 110px;
-        left: 0;
-    }
-}
-
-.product-img {
-    display: flex;
-    height: 200px;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-
-    .product-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-.product-price {
-    color: darkred;
-}
-
-.product-detail {
-    font-style: unset;
-}
-
-
-
-
-
 .page {
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 490px;
+    min-width:490px;
 }
 
 
@@ -207,7 +19,7 @@ main {
 
 .sidebar {
     background-image: linear-gradient(180deg, rgb(0, 9, 206) 0%, rgb(122 0 7) 90%);
-    z-index: 200;
+    z-index:200;
 }
 
 .top-row {
@@ -238,14 +50,13 @@ main {
     main {
         margin-top: 110px;
     }
-
     .top-row {
         justify-content: space-between;
     }
 
-        .top-row ::deep a, .top-row ::deep .btn-link {
-            margin-left: 0;
-        }
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        margin-left: 0;
+    }
 
     .sidebar {
         position: fixed;
@@ -259,22 +70,20 @@ main {
     .page {
         flex-direction: row;
     }
-
     main {
         margin-top: 55px;
     }
-
     .top-row {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-        .top-row.auth ::deep a:first-child {
-            flex: 1;
-            text-align: right;
-            width: 0;
-        }
+    .top-row.auth ::deep a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
 
     .top-row, article {
         padding-left: 2rem !important;
@@ -284,7 +93,7 @@ main {
     .sidebar {
         width: 250px;
         height: 100vh;
-        position: fixed;
+        position:fixed;
     }
 }
 

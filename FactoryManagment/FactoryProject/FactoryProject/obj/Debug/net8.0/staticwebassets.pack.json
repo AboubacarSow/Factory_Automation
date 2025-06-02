@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FactoryProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FactoryProject.f17nb4xs12.bundle.scp.css"
+      "PackagePath": "staticwebassets\\FactoryProject.0y2n4fr4ev.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\app.css",
@@ -39,10 +39,6 @@
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\menu.css",
       "PackagePath": "staticwebassets\\css\\menu.css"
-    },
-    {
-      "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\navMenu.css",
-      "PackagePath": "staticwebassets\\css\\navMenu.css"
     },
     {
       "Id": "C:\\Users\\ABOUBACAR\\source\\repos\\Factory_Database_Project\\FactoryManagment\\FactoryProject\\FactoryProject\\wwwroot\\css\\product.css",
